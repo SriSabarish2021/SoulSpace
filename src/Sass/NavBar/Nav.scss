@@ -1,0 +1,169 @@
+@use '../Flex-design-column';
+@use '../Flex-design-row';
+@use '../Basic-needs';
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
+.nav-bar-for-website{
+    height: 200px;
+    width: 100%;
+    padding: 0px 120px 0px 120px;
+    @include Flex-design-column.flex-colum;
+    justify-content: flex-start;
+
+    .nav-container-for-search{
+        height: auto;
+        width: 100%;
+        @include Flex-design-row.flex-row;
+        
+        .search-bar-nav{
+            height: auto;
+            width: 100%;
+           
+            @include Flex-design-row.flex-row;
+            gap: 10px;
+            justify-content: flex-start;
+            padding: 15px 0px 15px 0;
+            .search-bar-container-in-nav{
+                height: auto;
+                width: auto;
+                padding: 8px 10px 8px 10px;
+                border: 1px solid Basic-needs.$border-light-color;
+                border-radius: 20px;
+                .input-for-search{
+                    width: 240px;
+                    background-color: transparent;
+                    font-size: 13px;
+                    font-weight: 500;
+                    font-family: 'Open Sans';
+                    border: none;
+                    outline: none;
+                    border: 0px;
+                    letter-spacing: 0.5px;
+                    color: Basic-needs.$sub-main-txt-clr;
+
+                }
+                .input-for-search::placeholder{
+                    font-size: 14px;
+                    font-family: 'Walter Turncoat';
+
+                    letter-spacing: 0.5px;
+                    
+
+                }
+                
+                
+            }
+            .search-icon-holder-nav{
+                height: 32px;
+                width: 32px;
+                background-color: Basic-needs.$Main-color;
+                transition-duration: 0.5s;
+                @include Flex-design-row.flex-row;
+                border-radius: 10px;
+                .search-icon-nav{
+               font-size: 16px;
+               color: white;
+                }
+            }
+            .search-icon-holder-nav:hover{
+                cursor: pointer;
+                background-color: Basic-needs.$sub-color;
+                transition-duration: 0.5s;
+            }
+            
+
+        }
+        .social-link-nav{
+            height: auto;
+            width: 100%;
+            @include Flex-design-row.flex-row;
+            gap: 15px;
+            padding: 8px 0px 8px 0;
+            justify-content: flex-end;
+            .social-icons-nav{
+                height:32px;
+                width:32px;
+               background-color: Basic-needs.$sub-color;
+                @include Flex-design-row.flex-row;
+                transform: scale(1);
+                transition-duration: 0.3s;
+
+                border-radius: 100%;
+                 .social-icon-nav{
+                    font-size: 16px;
+                    color: white;
+                 }
+            }
+            .social-icons-nav:hover{
+                cursor: pointer;
+                transform: scale(1.05);
+                transition-duration: 0.3s;
+            }
+        }
+    }
+    .nav-container-for-main-navbar{
+        height: auto;
+        width: 100%;
+        @include Flex-design-row.flex-row;
+        padding: 25px 0px 25px 0px;
+        .site-logo{
+            height: auto;
+            width: 100%;
+            font-size: 30px;;
+            color: Basic-needs.$Main-color;
+            @include Flex-design-row.flex-row;
+            justify-content: flex-start;
+            .site-logo-img{
+                height: 50px;
+                width: 50px;
+                border-radius: 100%; 
+            }
+            .site-logo-name{
+                font-size: 23px;
+                font-weight: 600;
+                font-family: 'M PLUS Rounded 1c';
+            }
+
+        }
+        .nav-sections{
+            height: auto;
+            width: 100%;
+            @include Flex-design-row.flex-row;
+            justify-content: flex-end;
+            gap: 45px;
+            .nav-link-para{
+                text-decoration: none;
+                color: Basic-needs.$sub-main-txt-clr;
+                font-family: 'Hubballi';
+                font-weight: 600;
+                font-size: 20px;
+                gap:5px;
+                transition-duration: 0.3s;
+                @include Flex-design-row.flex-row;
+                .arrow-change-icon{
+                    @include Flex-design-row.flex-row;
+                    font-size: 13px;
+                    transform: rotate(0deg);
+                    transition-duration: 0.3s;
+                }
+
+
+            }
+            .nav-link-para:hover{
+                transition-duration: 0.3s;
+                color: Basic-needs.$Main-color;
+                .arrow-change-icon{
+                    transform: rotate(90deg);
+                    transition-duration: 0.3s;
+                    color: Basic-needs.$Main-color;
+                    
+                }
+            }
+        }
+    }
+}
