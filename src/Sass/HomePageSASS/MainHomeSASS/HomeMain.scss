@@ -1,0 +1,252 @@
+@use '../../column-center';
+@use '../../row-center';
+@use '../../Basic-needs';
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.Home-Page-Main{
+    height: 100dvh;
+    width: 100%;
+   
+    @include row-center.row-center;
+    padding: 0px 100px 0px 100px;
+    .homepage-cont-side{
+        height: 100%;
+        width: 100%;
+        
+        @include column-center.column-center;
+        gap: 50px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-top: 80px;
+        
+        .title-content-holder{
+            height: auto;
+            width: 100%;
+            @include column-center.column-center;
+            align-items: flex-start;
+            gap:15px;
+            .title-top-line{
+                height: 5px;
+                width: 60px;
+                background: #54ffac;
+background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255, 1) 100%);
+                border-radius: 50px;
+                margin-bottom: 5px;
+            }
+            .title-para{
+                height: auto;
+                width: 100%;
+                @include column-center.column-center;
+                align-items: flex-start;
+                
+                
+                .title-para-cont-home{
+                    font-size: 50px;
+                    font-family: 'Exo 2';
+                    font-weight: 800;
+                    color: Basic-needs.$main-txt-clr;
+                    .span-in-home-title{
+                        font-family:'Permanent Marker';
+                        background: #54ffe0;
+                        background: linear-gradient(209deg, rgba(84, 255, 224, 1) 0%, rgba(255, 138, 220, 1) 100%);
+                        background-clip: text;
+                        color: transparent;
+                    }
+                }
+            }
+            .title-sub-para{
+                font-size: 16px;
+                font-family:'Georama';
+                font-weight: 500;
+                color:Basic-needs.$sub-txt-clr;
+                letter-spacing: 1px;
+                line-height:30px;
+                width: 80%;
+            }
+            .home-page-main-btn-container{
+                height: auto;
+                width: 100%;
+                @include row-center.row-center;
+                justify-content: flex-start;
+                gap: 30px;
+                padding-top: 30px;
+                .home-page-main-btn{
+                    height: 45px;
+                    width: 190px;
+                    
+                    border-radius: 50px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    font-family: 'Playwrite DE Grund';
+                    font-weight: 600;
+                    @include row-center.row-center;
+                    
+                    cursor: pointer;
+                    
+                }
+                .home-page-main-btn-one{
+                        background-color:Basic-needs.$Main-color;
+                        color: white;
+                        position: relative;
+                        overflow: hidden;
+                        z-index: 1;
+                        .btn-design-one{
+                            position: absolute;
+                            height: 100%;
+                            width: 0px;
+                            background-color: Basic-needs.$sub-color;
+                            left: 0px;
+                            border-radius: 50px;
+                            transition-duration: 0.4s;
+                            z-index: -1;
+                        }
+
+                    }
+                .home-page-main-btn-one:hover{
+                    .btn-design-one{
+                            transition-duration: 0.4s;
+                            width: 100%;
+                            
+                        }
+
+                }
+                .home-page-main-btn-two{
+                    background-color: transparent;
+                    border: 2px solid Basic-needs.$Main-color;
+                    color: Basic-needs.$Main-color;
+                    z-index: 1;
+                    transition-duration: 0.4s;
+                    position: relative;
+                    overflow: hidden;
+                    .btn-design-two{
+                            position: absolute;
+                            height: 100%;
+                            width: 0px;
+                            background-color: Basic-needs.$sub-color;
+                            left: 0px;
+                            border-radius: 50px;
+                            transition-duration: 0.4s;
+                            z-index: -1;
+                        }
+                }
+                .home-page-main-btn-two:hover{
+                    transition-duration: 0.4s;
+                    border: 2px solid Basic-needs.$sub-color;
+                    color: white;
+                    .btn-design-two{
+                            transition-duration: 0.4s;
+                            width: 100%;
+                            
+                        }
+
+                }
+            }
+        }
+        .home-page-analysis-bar{
+            height: auto;
+            width: auto;
+            max-width: 80%;
+            @include row-center.row-center;
+            justify-content: flex-start;
+            gap: 30px;
+            .analysis-container{
+                
+                @include column-center.column-center;
+                align-items: flex-start;
+                gap: 6px;
+                .analysis-cont-one{
+                    font-size: 45px;
+                    font-weight: 900;
+                    color: Basic-needs.$sub-color;
+                    font-family: 'Nunito';
+                }
+                .analysis-line{
+                    height: 2px;
+                    width: 60px;
+                    border-radius: 50px;
+                    background-color: #a4fff9;
+                }
+                .analysis-cont-two{
+                    font-size: 14px;
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    letter-spacing: 0.5px;
+                    line-height: 21px;
+                    color: Basic-needs.$sub-txt-clr;
+                }
+                
+            }
+        }
+
+    }
+    .homepage-image-side{
+        height: 100%;
+        width: 100%;
+        @include column-center.column-center;
+        overflow: hidden;
+        
+        .image-container-in-home-main{
+            height: 75%;
+            width: 75%;
+            position: relative;
+
+            .img-in-main-home-page{
+            height:100%;
+            width: 100%;
+            border-radius: 200px 10px 200px 10px;
+            }
+           
+            .disign-box-home-main-one{
+                position: absolute;
+                height:90%;
+                width:90%;
+                background-color: #a8dfc4;
+                top: -40px;
+                left: -40px;
+                border-radius:220px 10px 220px 10px;
+                z-index: -1;
+                transition-duration: 0.4s;
+                
+
+            }
+            .disign-box-home-main-two{
+                position: absolute;
+                height:90%;
+                width:90%;
+                background-color: #c8e0af;
+                bottom: -40px;
+                right: -40px;
+                border-radius: 220px 10px 220px 10px;
+                z-index: -1;
+                                transition-duration: 0.4s;
+
+            }
+        }
+        .image-container-in-home-main:hover{
+            
+            .disign-box-home-main-one{
+                background-color:#c8e0af;
+                transition-duration: 0.4s;
+            }
+            .disign-box-home-main-two{
+                background-color: #a8dfc4;
+                transition-duration: 0.4s;
+            }
+          
+        }
+        
+    }
+}
