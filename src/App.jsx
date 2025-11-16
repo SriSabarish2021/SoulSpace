@@ -1,14 +1,19 @@
 import Nav from './Components/NavBar/Nav'
+import { Route, Routes } from 'react-router-dom'
 
 import './App.scss'
-import HomeMain from './Components/HomePageComponents/MainHome/HomeMain'
+import HomepageAll from './Components/WebsiteComponents/HomepageAll'
 
 function App() {
 
   return (
     <div className='website-main-container'>
       <Nav></Nav>
-      <HomeMain/>
+      <Routes>
+        <Route path='/'>
+          <Route index element={<HomepageAll/>}/>
+        </Route>
+      </Routes>
     </div>
   )
 }
