@@ -1,3 +1,310 @@
 @use '../../column-center';
 @use '../../row-center';
 @use '../../Basic-needs';
+@import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.Programs-offered-main-container{
+    height: auto;
+    width: 100%;
+    padding: 80px 100px 80px 100px;
+    @include column-center.column-center;
+    align-items: flex-start;
+    gap:30px;
+    .programs-offered-title-inner{
+        height: auto;
+        width: auto;
+        @include column-center.column-center;
+        gap: 10px;
+        align-items: flex-start;
+        .Programs-offer-para-small{
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Delius Unicase';
+            color: Basic-needs.$Main-color;
+        }
+        .Programs-offer-para-main{
+            font-size: 50px;
+            font-weight: 600;
+            gap: 2px;
+            color: Basic-needs.$sub-main-txt-clr;
+            font-family: 'Averia Libre';
+            @include column-center.column-center;
+            align-items: flex-start;
+            .span-in-offer-tit{
+                 font-size: 50px;
+                font-weight: 600;
+                font-family: 'Style Script';
+                color: Basic-needs.$Main-color;
+                position: relative;
+                .under-line-we-offer{
+                    position: absolute;
+                        height: 20px;
+                        width: 120px;
+                        left: 40px;
+                        bottom: 0;
+                        background-image: url(/HomePage/underline-why-choose.png);
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+
+                }
+            }
+        }
+    }
+    .Programs-offered-main-cards{
+        height: auto;
+        width: 100%;
+        display: grid;
+        padding: 0px 40px 0px 40px;
+        grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+        justify-self: center;
+        align-content: center;
+        justify-items: center;
+        align-content: center;
+        row-gap: 60px;
+        .program-cards-design{
+            height: auto;
+            width: 350px;
+            background-color: rgb(255,249,245);
+            border-radius: 40px;
+            padding: 40px;
+            @include column-center.column-center;
+            gap: 15px;
+            align-items: flex-start;
+            .Card-image{
+                height: auto;
+                width: auto;
+                font-size: 50px;
+                color: rgb(63, 166, 229); 
+                @include column-center.column-center;
+            }
+            .Card-info{
+                height: auto;
+                width: auto;
+                @include column-center.column-center;
+                align-items: flex-start; 
+                gap: 25px;
+                .card-info-txt{
+                    height: auto;
+                    width: auto;
+                    @include column-center.column-center;
+                    align-items: flex-start;
+                    gap: 14px;
+                    .main-tit-for-card{
+                        font-size: 30px;
+                        font-family: 'Tagesschrift';
+                        letter-spacing: 1px;
+                        font-weight: 600;
+                        color: #002a34;
+                    }
+                    .sub-tit-for-card{
+                        font-size: 15px;
+                        font-family: 'Roboto';
+                        font-weight: 400;
+                        line-height: 24px;
+                        color: Basic-needs.$sub-txt-clr;
+                        letter-spacing: 0.5px;
+                        text-align: justify;
+                    }
+                }
+                .card-view-more{
+                    height: auto;
+                    width:auto;
+                .card-view-btn{
+                    height:auto;
+                    width: auto;
+                    @include column-center.column-center;
+                    padding: 10px 14px;
+                    border-radius: 20px;;
+                    z-index: 1;
+                    border: 1px solid rgb(77, 77, 77);
+                    font-size: 15px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    color: Basic-needs.$sub-main-txt-clr;
+                    position: relative;
+                    overflow: hidden;
+                    cursor: pointer;
+                    transition-duration: 0.3s;
+
+                    .card-view-btn-design{
+                        position: absolute;
+                        height: 0%;
+                        width: 0%;
+                        z-index: -1;
+                        border-radius: 10px;
+                        background-color: Basic-needs.$sub-main-txt-clr;
+                        transition-duration: 0.3s;
+
+                    }
+
+                }
+                .card-view-btn:hover{
+                    color: white;
+                    transition-duration: 0.3s;
+                    .card-view-btn-design{
+                        
+                        height: 100%;
+                        width: 100%;
+                        transition-duration: 0.3s;
+                        
+
+                    }
+                }
+            }
+                
+            }
+            
+        }
+        .card-for-booking-detail{
+            position: relative;
+            padding: 0px 0px 25px 0px;   
+           
+            @include column-center.column-center;
+            justify-content: flex-start;
+            gap: 10px;
+            .round-design-booking-date{
+                position: absolute;
+                height: 60px;
+                width: 60px;
+                top: -25px;
+                right: -10px;
+                background-image: url(/HomePage/break-cirlce.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                animation: rotatedesign-student-join 8s linear infinite;
+            }
+            @keyframes rotatedesign-student-join {
+                0%{
+                    rotate: 0deg;
+                }
+                100%{
+                    rotate: 360deg;
+                }
+            }
+            .booking-card{
+            height: auto;
+            width: 100%;
+            padding: 20px 30px;
+            background-color: rgb(58, 131, 222);
+            @include column-center.column-center;
+            gap: 8px;
+             border-radius: 40px 40px 0px 0px;
+            align-items: flex-start;
+            
+            
+            
+                .booking-card-para-one{
+                    color: white;
+                    font-size: 30px;
+                    font-weight:600;
+                    font-family: 'Averia Libre'
+
+                }
+                .location-detail-in-card{
+                    @include row-center.row-center;
+                    gap: 10px;
+                    color: white;
+                    font-size: 22px;
+                    .location-detail-in-card{
+                        @include column-center.column-center;
+                        gap: 2px;
+                        font-size: 14px;
+                        font-family: 'Open Sans';
+                        align-items: flex-start;
+                        color: white;
+                        text-align: justify;
+                    }
+                }
+             
+            }
+            .booking-days{
+                height: auto;
+                width: 100%;
+                padding:15px 25px;
+                @include column-center.column-center;
+                gap: 15px;
+                .day-of-one-booking{
+                    height: auto;
+                    width: 100%;
+                    @include column-center.column-center;
+                    gap: 12px;
+                    .day-of-bookin-time{
+                        height: auto;
+                        width: 100%;
+                        @include row-center.row-center;
+                        justify-content: space-between;
+                        .day-of-bookin-time-para-one{
+                            font-size: 16px;
+                            font-family: 'Nunito';
+                            font-weight: 600;
+                            letter-spacing: 0.5px;
+                            color: #242424;
+                        }
+                       
+                        .day-of-bookin-time-para-two{
+                            font-size: 14px;
+                            font-family: 'Inter';
+                            font-weight: 500;
+                            letter-spacing: 0.5px;
+                            color: #333333;
+                        }
+                         .lighter-day{
+                            color: #808080;
+                        }
+                    }
+                    .line-under-day-booking{
+                        height: 1px;
+                        width: 100%;
+                        background-color: #cbcbcb;
+                    }
+
+                }
+            }
+            .booking-date-program-btn{
+                height:auto;
+                width: auto;
+                border-radius: 50px;
+                background-color: Basic-needs.$Main-color;
+                font-size: 16px;
+                font-weight:600;
+                font-family: 'Nunito';
+                color: white;
+                padding: 10px 60px;
+                @include column-center.column-center;
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                cursor: pointer;
+                .booking-date-program-btn-design{
+                    position: absolute;
+                    height: 0%;
+                    width: 100%;
+                    background-color: Basic-needs.$sub-color;
+                    z-index: -1;
+                    transition-duration: 0.3s;
+                    
+                }
+
+            }
+            .booking-date-program-btn:hover{
+
+                .booking-date-program-btn-design{
+                    
+                    height: 100%;
+                    transition-duration: 0.3s;
+                }
+            }
+        }
+        
+    }
+
+}

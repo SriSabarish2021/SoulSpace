@@ -17,7 +17,8 @@
 
 
 .Home-Page-Main{
-    height: 100dvh;
+    height: auto;
+    
     width: 100%;
    
     @include row-center.row-center;
@@ -196,7 +197,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
         height: 100%;
         width: 100%;
         @include column-center.column-center;
-        overflow: hidden;
+        
         
         .image-container-in-home-main{
             height: 75%;
