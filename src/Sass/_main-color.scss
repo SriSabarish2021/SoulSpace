@@ -9,8 +9,8 @@ $border-light-color:rgb(218, 218, 218);
 $border-more-light-color:rgb(236, 236, 236);
 $star-color:rgb(255, 157, 0);
 @mixin letter-color-main{
-     background: #c757b6;
-     background: linear-gradient(32deg, rgba(199, 87, 182, 1) 14%, rgba(218, 87, 133, 1) 53%, rgba(237, 86, 83, 1) 91%);
+         background: #54ffe0;
+    background: linear-gradient(209deg, rgb(84, 255, 224) 0%, rgb(255, 138, 220) 100%);
      -webkit-background-clip: text;
      background-clip: text;
      color: transparent;

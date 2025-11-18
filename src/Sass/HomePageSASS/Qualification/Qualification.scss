@@ -3,6 +3,8 @@
 @use '../../main-color';
 @use '../../Column-center';
 @use '../../Row-center';
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -65,7 +67,7 @@ height: 100%;
 .staff-page-container{
     height: auto;
     width: 100%;
-    padding: 0px 30px;
+    padding: 40px 100px;
     @include Row-center.row-center;
     overflow: hidden;
     
@@ -84,9 +86,10 @@ height: 100%;
             gap:20px;
 
             .image-box-one-image{
-                height: 360px;
+                height: 330px;
                 width: 100%;  
                 border-radius: 10px;
+                
                 animation: img-one-move-home linear ;
                 animation-timeline: view();
                 animation-range: entry 0% cover 30%;
@@ -419,11 +422,11 @@ height: 100%;
                 gap: 3px;
                 .heading-tutor-p-one{
                     font-size: 60px;
-                    font-family: 'Merriweather Sans';
+                    font-family: 'Averia Libre';
                      color:main-color.$font-main-color;
                      .span-in-analysis{
                         font-size: 60px;
-                        color: main-color.$main-color-for-app-little-darker;
+                        color: Basic-needs.$Main-color;
                         font-family: 'Imperial Script';
                         text-decoration: underline;
                         text-underline-offset: 12px;
@@ -435,6 +438,7 @@ height: 100%;
                     font-size: 60px;
                     font-family: 'Lobster';
                      @include main-color.letter-color-main;
+                     
                     
                     
                         
@@ -448,8 +452,9 @@ height: 100%;
                 align-items: flex-start;
                 .sub-heading-tutor-p-one{
                     font-size: 14px;
-                    color: #868686;
-                    font-family:'Delius';
+                    color: Basic-needs.$sub-txt-clr;
+                    font-family:'Georama';
+                    font-weight: 500;
                     text-align: justify;
                     letter-spacing: 1px;
                     line-height: 25px;
@@ -470,12 +475,12 @@ height: 100%;
                 font-size: 45px;
                 font-family:'Kirang Haerang';
                 font-weight: 600;
-                color: main-color.$main-color-for-app-little-darker;
+                color: Basic-needs.$Main-color ;
             }
             .analysis-cont{
                  font-size: 14px;
                 font-family: 'Play';
-                color: rgb(132, 119, 119);
+                color: Basic-needs.$sub-txt-clr;
                 letter-spacing: 1px;
                 line-height:20px
             }
@@ -493,7 +498,7 @@ height: 100%;
 
                         .img-for-analysis{
                             
-                            @include image-for-analysis-cont('/StaffPage/stack-of-books (3).png');
+                            @include image-for-analysis-cont('/Qualification/qual-one-img.png');
                         }
                     }
                     .analysis-tag-content-one{
@@ -509,7 +514,7 @@ height: 100%;
 
                         .img-for-analysis{
                             
-                            @include image-for-analysis-cont('/StaffPage/online-course (3).png');
+                            @include image-for-analysis-cont('/Qualification/qual-two-img.png');
 
                         }
                     }
@@ -528,8 +533,8 @@ height: 100%;
 ;
                         .img-for-analysis{
                            
-                            @include image-for-analysis-cont('/StaffPage/online-education (1).png');
-
+                            @include image-for-analysis-cont('/Qualification/qual-three-img.png');
+                            
                         }
                     }
                     .analysis-tag-content-three{
@@ -545,7 +550,7 @@ height: 100%;
 
                         .img-for-analysis{
                             
-                            @include image-for-analysis-cont('/StaffPage/online-certificate (1).png');
+                            @include image-for-analysis-cont('/Qualification/qual-four-img.png');
 
                         }
                     }
@@ -581,7 +586,7 @@ height: 100%;
             left: 0px;
             z-index: -1;
             transition-duration: 0.4s;
-            background-color:  main-color.$main-color-red-for-btn;
+            background-color: Basic-needs.$Main-color;
          
         }
         .btn-in-tutor-analysis:hover .btn-animation-in-staff-page{

@@ -37,17 +37,17 @@ const Qualification = () => {
       <div className='staff-page-image-container'>
         <div className='staff-page-image-box-one'>
           
-            <img src="/StaffPage/Staff-one.webp" alt="Staff Image "
+            <img src="Qualification/img-qual-one.webp" alt="Staff Image "
             className='image-box-one-image Staff-Image-Scroll'/>
           <div className='image-box-one-totors'>
             <div className='tutors-img-tag'>
-               <img src="/StaffPage/Top-staff-one.avif" alt="Staff Image"
+               <img src="Qualification/Top-staff-Four.avif" alt="Staff Image"
              className='tutor-round tutor-one'/>
-              <img src="/StaffPage/Top-staff-two.avif" alt="Staff Image"
+              <img src="Qualification/Top-staff-three.avif" alt="Staff Image"
              className='tutor-two'/>
-              <img src="/StaffPage/Top-staff-three.avif" alt="Staff Image"
+              <img src="Qualification/Top-staff-two.avif" alt="Staff Image"
              className='tutor-three'/>
-             <img src="/StaffPage/Top-staff-Four.avif" alt="Staff Image"
+             <img src="Qualification/Top-staff-one.avif" alt="Staff Image"
              className='tutor-four'/>
               <div className='tutor-five'>
                 <p>+50</p>
@@ -73,7 +73,7 @@ const Qualification = () => {
                 <p className='our-story'>Our Story</p>
               </div>
           </div>
-           <img src="/StaffPage/Staff-page-img.webp" alt="Staff Image "
+           <img src="Qualification/qual-img-two.jpg" alt="Staff Image "
              className='image-box-two-imagetwo Staff-Image-Scroll'/>
 
           <div className='mobile-image-for-staff-page'>
