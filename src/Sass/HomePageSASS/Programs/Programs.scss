@@ -1,5 +1,5 @@
-@use '../../column-center';
-@use '../../row-center';
+@use '../../Column-center';
+@use '../../Row-center';
 @use '../../Basic-needs';
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
 
@@ -15,13 +15,13 @@
     height: auto;
     width: 100%;
     padding: 80px 100px 80px 100px;
-    @include column-center.column-center;
+    @include Column-center.column-center;
     align-items: flex-start;
     gap:30px;
     .programs-offered-title-inner{
         height: auto;
         width: auto;
-        @include column-center.column-center;
+        @include Column-center.column-center;
         gap: 10px;
         align-items: flex-start;
         .Programs-offer-para-small{
@@ -36,7 +36,7 @@
             gap: 2px;
             color: Basic-needs.$sub-main-txt-clr;
             font-family: 'Averia Libre';
-            @include column-center.column-center;
+            @include Column-center.column-center;
             align-items: flex-start;
             .span-in-offer-tit{
                  font-size: 50px;
@@ -76,7 +76,7 @@
             background-color: rgb(255,249,245);
             border-radius: 40px;
             padding: 40px;
-            @include column-center.column-center;
+            @include Column-center.column-center;
             gap: 15px;
             align-items: flex-start;
             .Card-image{
@@ -84,18 +84,18 @@
                 width: auto;
                 font-size: 50px;
                 color: rgb(63, 166, 229); 
-                @include column-center.column-center;
+                @include Column-center.column-center;
             }
             .Card-info{
                 height: auto;
                 width: auto;
-                @include column-center.column-center;
+                @include Column-center.column-center;
                 align-items: flex-start; 
                 gap: 25px;
                 .card-info-txt{
                     height: auto;
                     width: auto;
-                    @include column-center.column-center;
+                    @include Column-center.column-center;
                     align-items: flex-start;
                     gap: 14px;
                     .main-tit-for-card{
@@ -121,7 +121,7 @@
                 .card-view-btn{
                     height:auto;
                     width: auto;
-                    @include column-center.column-center;
+                    @include Column-center.column-center;
                     padding: 10px 14px;
                     border-radius: 20px;;
                     z-index: 1;
@@ -167,7 +167,7 @@
             position: relative;
             padding: 0px 0px 25px 0px;   
            
-            @include column-center.column-center;
+            @include Column-center.column-center;
             justify-content: flex-start;
             gap: 10px;
             .round-design-booking-date{
@@ -195,7 +195,7 @@
             width: 100%;
             padding: 20px 30px;
             background-color: rgb(58, 131, 222);
-            @include column-center.column-center;
+            @include Column-center.column-center;
             gap: 8px;
              border-radius: 40px 40px 0px 0px;
             align-items: flex-start;
@@ -210,12 +210,12 @@
 
                 }
                 .location-detail-in-card{
-                    @include row-center.row-center;
+                    @include Row-center.row-center;
                     gap: 10px;
                     color: white;
                     font-size: 22px;
                     .location-detail-in-card{
-                        @include column-center.column-center;
+                        @include Column-center.column-center;
                         gap: 2px;
                         font-size: 14px;
                         font-family: 'Open Sans';
@@ -230,17 +230,17 @@
                 height: auto;
                 width: 100%;
                 padding:15px 25px;
-                @include column-center.column-center;
+                @include Column-center.column-center;
                 gap: 15px;
                 .day-of-one-booking{
                     height: auto;
                     width: 100%;
-                    @include column-center.column-center;
+                    @include Column-center.column-center;
                     gap: 12px;
                     .day-of-bookin-time{
                         height: auto;
                         width: 100%;
-                        @include row-center.row-center;
+                        @include Row-center.row-center;
                         justify-content: space-between;
                         .day-of-bookin-time-para-one{
                             font-size: 16px;
@@ -279,7 +279,7 @@
                 font-family: 'Nunito';
                 color: white;
                 padding: 10px 60px;
-                @include column-center.column-center;
+                @include Column-center.column-center;
                 position: relative;
                 z-index: 1;
                 overflow: hidden;

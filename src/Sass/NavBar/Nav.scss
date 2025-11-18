@@ -1,5 +1,5 @@
-@use '../column-center';
-@use '../row-center';
+@use '../Column-center';
+@use '../Row-center';
 @use '../Basic-needs';
 @import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
@@ -12,19 +12,19 @@
     height: auto;
     width: 100%;
     padding: 0px 100px 0px 100px;
-    @include column-center.column-center;
+    @include Column-center.column-center;
     justify-content: flex-start;
 
     .nav-container-for-search{
         height: auto;
         width: 100%;
-        @include row-center.row-center;
+        @include Row-center.row-center;
         
         .search-bar-nav{
             height: auto;
             width: 100%;
            
-            @include row-center.row-center;
+            @include Row-center.row-center;
             gap: 10px;
             justify-content: flex-start;
             padding: 15px 0px 15px 0;
@@ -63,7 +63,7 @@
                 width: 32px;
                 background-color: Basic-needs.$Main-color;
                 transition-duration: 0.5s;
-                @include row-center.row-center;
+                @include Row-center.row-center;
                 border-radius: 10px;
                 .search-icon-nav{
                font-size: 16px;
@@ -81,7 +81,7 @@
         .social-link-nav{
             height: auto;
             width: 100%;
-            @include row-center.row-center;
+            @include Row-center.row-center;
             gap: 15px;
             padding: 8px 0px 8px 0;
             justify-content: flex-end;
@@ -89,7 +89,7 @@
                 height:32px;
                 width:32px;
                background-color: Basic-needs.$sub-color;
-                @include row-center.row-center;
+                @include Row-center.row-center;
                 transform: scale(1);
                 transition-duration: 0.3s;
 
@@ -109,14 +109,14 @@
     .nav-container-for-main-navbar{
         height: auto;
         width: 100%;
-        @include row-center.row-center;
+        @include Row-center.row-center;
         padding: 25px 0px 35px 0px;
         .site-logo{
             height: auto;
             width: 100%;
             font-size: 30px;;
             color: Basic-needs.$Main-color;
-            @include row-center.row-center;
+            @include Row-center.row-center;
             justify-content: flex-start;
             .site-logo-img{
                 height: 50px;
@@ -133,7 +133,7 @@
         .nav-sections{
             height: auto;
             width: 100%;
-            @include row-center.row-center;
+            @include Row-center.row-center;
             justify-content: flex-end;
             gap: 45px;
             .nav-link-para{
@@ -144,9 +144,9 @@
                 font-size: 20px;
                 gap:5px;
                 transition-duration: 0.3s;
-                @include row-center.row-center;
+                @include Row-center.row-center;
                 .arrow-change-icon{
-                    @include row-center.row-center;
+                    @include Row-center.row-center;
                     font-size: 13px;
                     transform: rotate(0deg);
                     transition-duration: 0.3s;

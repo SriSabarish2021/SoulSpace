@@ -1,5 +1,5 @@
-@use '../../column-center';
-@use '../../row-center';
+@use '../../Column-center';
+@use '../../Row-center';
 @use '../../Basic-needs';
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
@@ -21,13 +21,13 @@
     
     width: 100%;
    
-    @include row-center.row-center;
+    @include Row-center.row-center;
     padding: 0px 100px 0px 100px;
     .homepage-cont-side{
         height: 100%;
         width: 100%;
         
-        @include column-center.column-center;
+        @include Column-center.column-center;
         gap: 50px;
         justify-content: flex-start;
         align-items: flex-start;
@@ -36,7 +36,7 @@
         .title-content-holder{
             height: auto;
             width: 100%;
-            @include column-center.column-center;
+            @include Column-center.column-center;
             align-items: flex-start;
             gap:15px;
             .title-top-line{
@@ -50,7 +50,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
             .title-para{
                 height: auto;
                 width: 100%;
-                @include column-center.column-center;
+                @include Column-center.column-center;
                 align-items: flex-start;
                 
                 
@@ -80,7 +80,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
             .home-page-main-btn-container{
                 height: auto;
                 width: 100%;
-                @include row-center.row-center;
+                @include Row-center.row-center;
                 justify-content: flex-start;
                 gap: 30px;
                 padding-top: 30px;
@@ -93,7 +93,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
                     letter-spacing: 1px;
                     font-family: 'Playwrite DE Grund';
                     font-weight: 600;
-                    @include row-center.row-center;
+                    @include Row-center.row-center;
                     
                     cursor: pointer;
                     
@@ -160,12 +160,12 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
             height: auto;
             width: auto;
             max-width: 80%;
-            @include row-center.row-center;
+            @include Row-center.row-center;
             justify-content: flex-start;
             gap: 30px;
             .analysis-container{
                 
-                @include column-center.column-center;
+                @include Column-center.column-center;
                 align-items: flex-start;
                 gap: 6px;
                 .analysis-cont-one{
@@ -196,7 +196,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
     .homepage-image-side{
         height: 100%;
         width: 100%;
-        @include column-center.column-center;
+        @include Column-center.column-center;
         
         
         .image-container-in-home-main{
