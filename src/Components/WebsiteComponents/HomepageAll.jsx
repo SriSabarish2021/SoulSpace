@@ -1,3 +1,4 @@
+import GetinTouch from '../HomePageComponents/GetinTouch/GetinTouch.jsx';
 import HomeMain from '../HomePageComponents/MainHome/HomeMain.jsx';
 import Programs from '../HomePageComponents/Programs/Programs.jsx';
 import Qualification from '../HomePageComponents/Qualification/Qualification';
@@ -10,8 +11,9 @@ const HomepageAll = () => {
       <HomeMain/>
       <Programs/>
       <Qualification/>
-      <SideBy/>
       <Subcription/>
+      <SideBy/>
+      <GetinTouch/>
       
     </>
   )

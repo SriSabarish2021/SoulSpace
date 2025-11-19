@@ -1,0 +1,176 @@
+
+@use '../../Basic-needs';
+@use '../../main-color';
+@use '../../Column-center';
+@use '../../Row-center';
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.Contact-form-input-container{
+    height: auto;
+    width: 100%;
+    padding: 50px 100px;
+    background-color: rgb(244, 255, 255);
+    @include Column-center.column-center;
+    gap: 40px;
+    .Contact-form-title{
+        height: auto;
+        width: 100%;
+        @include Column-center.column-center;
+        font-family: 'Averia Libre';
+        font-size: 45px;
+        font-weight: 600;
+        .title-for-contact-form{
+            @include Column-center.column-center;
+            
+        }
+    }
+    .Contact-form-input-fields{
+        height: auto;
+        width: 100%;
+        @include Column-center.column-center;
+        gap: 30px;
+        .Form-element-conatiner{
+            height: auto;
+            width: auto;
+            @include Column-center.column-center;
+            gap: 40px;
+            .basic-info-form-container{
+                height: auto;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                justify-items: center;
+                align-content: center;
+                gap: 40px;
+                column-gap: 120px;
+                .input-with-txt-container{
+                    height: auto;
+                    width: auto;
+                    @include Column-center.column-center;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 8px;
+                    .input-form-txt{
+                        font-size: 14px;
+                        color:rgb(61, 61, 61);
+                        font-family: 'Roboto';
+                        letter-spacing: 0.5px;
+                    }
+                    .input-container-form{
+                        height: auto;
+                        width: auto;
+                        border-radius: 50px;
+                        overflow: hidden;
+                        
+                        border: 1px solid rgb(184, 184, 184);
+                        .input-box-form{
+                            width: 280px;
+                            padding: 14px 10px;
+                            border: none;
+                            outline: none;
+                            font-size: 14px;
+                            font-family: 'Noto Sans';
+                            letter-spacing: 0.5px;
+                            color: main-color.$font-main-color;
+                        }
+                        .input-box-form:active{
+                            outline: none;
+                            border: none;
+                        }
+                    }
+
+                }
+
+            }
+            .main-message-form-container{
+                height: auto;
+                width: 100%;
+                @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 8px;
+                .para-for-text-in-form{
+                    font-size: 14px;
+                        color:rgb(61, 61, 61);
+                        font-family: 'Roboto';
+                        letter-spacing: 0.5px;
+                }
+                .text-area-for-message{
+                    width: 100%;
+                    height: 150px;
+                    padding: 10px 10px;
+                    border: 1px solid rgb(184, 184, 184);
+                    font-size: 14px;
+                    font-family: 'Noto Sans';
+                    letter-spacing: 0.5px;
+                    color: main-color.$font-main-color;
+                    border-radius: 10px;
+                    resize: none;
+                }.text-area-for-message:active{
+                    outline: none;
+                    border:none;
+                }
+            }
+        }
+        .para-policy-in-form{
+            width: 50%;
+            text-align: center;
+            letter-spacing: 0.5px;
+            line-height: 25px;
+            font-family: 'Roboto';
+            font-size: 13px;
+            color: rgb(133, 133, 133);
+        }
+        .Form-submit-btn{
+            padding: 12px 80px;
+            border-radius: 50px;
+            background-color: Basic-needs.$Main-color;
+            color: white;
+            font-size: 17px;
+            font-family: 'Exo 2';
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+            position: relative;
+            @include Column-center.column-center;
+            overflow: hidden;
+            z-index: 1;
+                            transition-duration: 0.3s;
+
+            .for-submit-btn-design{
+                position: absolute;
+                height: 0%;
+                width: 100%;
+                z-index: -1;
+                transition-duration: 0.3s;
+
+                background-color: Basic-needs.$sub-color;
+            }
+        }
+        .Form-submit-btn:hover{
+            transition-duration: 0.3s;
+            color: black;
+
+            .for-submit-btn-design{
+                height: 100%;
+                transition-duration: 0.3s;
+               
+            }
+        }
+    }
+}

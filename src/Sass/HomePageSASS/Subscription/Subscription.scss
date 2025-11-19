@@ -1,0 +1,205 @@
+
+@use '../../Basic-needs';
+@use '../../main-color';
+@use '../../Column-center';
+@use '../../Row-center';
+
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.Subscription-main-page-container{
+    height: auto;
+    width: 100%;
+    padding: 50px 0px;
+    @include Column-center.column-center;
+    gap: 80px;
+    background-color: #f6fffe;
+   .Pricing-plan-title-container{
+        height: auto;
+        width: 100%;
+        @include Column-center.column-center;
+        .pricing-plan-para-div{
+            height: auto;
+            width: 30%;
+            @include Column-center.column-center;
+            gap: 15px;
+            .para-main-pricing-one{
+                font-size: 45px;
+                font-family: 'Averia Libre';
+                font-weight: 600;
+                color: Basic-needs.$main-txt-clr;
+
+            }
+            .para-main-pricing-two{
+                font-size:15px;
+                font-family: 'Georama';
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: 1px;
+                line-height: 25px;
+                color: Basic-needs.$sub-txt-clr;
+            }
+        }
+
+   }
+   .Pricing-plan-main-container{
+        height: auto;
+        width: 100%;
+        @include Row-center.row-center;
+        gap: 40px;
+
+        .Pricing-box{
+            height: auto;
+            width:auto;
+            background-color: white;
+            border-radius:20px;
+            transition-duration: 0.3s;
+            @include Column-center.column-center;
+            gap: 30px;
+            padding: 50px 90px;
+            box-shadow: rgba(17, 17, 26, 0.1019607843) 0 0 16px;
+            .pricing-title-box{
+                height: auto;
+                width: 100%;
+                @include Column-center.column-center;
+                gap: 20px;
+                .plan-name{
+                    font-size: 26px;
+                    font-family: 'DM Sans';
+                    font-weight: 800;
+                    color: Basic-needs.$sub-main-txt-clr;
+
+                }
+                .plan-amount-para{
+                    font-size: 45px;
+                    font-family: 'Exo';
+                    font-weight: 800;
+                    color: Basic-needs.$Main-color;
+                    @include Column-center.column-center;
+                
+                    .Amount-underline-for-plan{
+                        height: 2px;
+                        width: 60px;
+                        border-radius: 100%;
+                        background-color: #dcdcdc;
+                    }
+                }
+
+            }
+            .Princing-features{
+                width: 100%;
+                height: auto;
+                @include Column-center.column-center;
+                gap: 20px;
+                font-size: 16px;
+                font-family: 'Vend Sans';
+                font-weight: 400;
+                color: Basic-needs.$sub-txt-clr;
+                letter-spacing: 0.5px;
+                .para-in-feature-pricing{
+                    @include Row-center.row-center;
+                    gap: 8px;
+                    .Tick-icon-in-features{
+                    @include Row-center.row-center;
+                    font-size: 17px;
+                    color: Basic-needs.$sub-color;
+                }
+
+                }
+                
+            }
+            .button-in-pricing-box{
+                height: auto;
+                width: auto;
+                padding: 6px 40px;
+                border: 1px solid Basic-needs.$Main-color;
+                border-radius: 50px;
+                font-size: 18px;
+                font-family: 'MuseoModerno';
+                font-weight: 500;
+                cursor: pointer;
+                position: relative;
+                @include Column-center.column-center;
+                overflow: hidden;
+                color: Basic-needs.$Main-color;
+                transition-duration: 0.3s;
+                z-index: 1;
+                .button-design-for-pricing-one{
+                    height:0%;
+                    width: 100%;
+                    position: absolute;
+                    top: -50%;
+                    background-color: Basic-needs.$sub-color;
+                    transition-duration: 0.6s;
+                    z-index: -1;
+                }
+                .button-design-for-pricing-two{
+                    height: 0%;
+                    width: 100%;
+                    position: absolute;
+                    bottom: -50%;
+                    background-color: Basic-needs.$sub-color;
+                    transition-duration: 0.6s;
+                    z-index: -1;
+                }
+            }
+            .button-in-pricing-box:hover{
+                color: white;
+                border-color:Basic-needs.$sub-color;
+                transition-duration: 0.3s;
+                 .button-design-for-pricing-one{
+                    height: 100%;
+                    transition-duration: 0.3s;
+                }
+                .button-design-for-pricing-two{
+                    height: 100%;
+                    transition-duration: 0.3s;
+                }
+            }
+
+        }
+        .pricing-bottom{
+           transform: translateY(0px);
+           transition-duration: 0.3s;
+          
+        }
+        .pricing-top:hover{
+            transition-duration: 0.3s;
+           transform: translateY(-30px);
+            transition-delay: 0.05s;
+          
+        }
+        .pricing-bottom:hover{
+            transition-duration: 0.3s;
+           transform: translateY(-30px);
+            transition-delay: 0.05s;
+          
+        }
+         .pricing-middle{
+        
+           transform: translateY(-30px);
+            
+          
+        }
+         
+        
+       
+        
+   }
+
+}
