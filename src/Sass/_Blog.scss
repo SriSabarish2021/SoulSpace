@@ -1,0 +1,87 @@
+@use 'Column-center';
+@use 'Row-center';
+@use 'main-color';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+@mixin Image-container-blog($imageurl){
+               
+}
+
+@mixin blog-content-container{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(55%);  
+                @include Column-center.column-center;
+                gap: 20px;
+                padding-left: 20px;
+                padding-right: 10px;
+                align-items: flex-start;
+                
+                .blog-upload-date{
+                    height:auto;
+                    width: auto;
+                    padding: 7px 20px;
+                    background-color: rgb(255, 62, 62);
+                    @include Row-center.row-center;
+                    border-radius: 50px;
+                    font-size: 12px;
+                    font-family:'Roboto Flex';
+                    letter-spacing: 1px;
+                    color: white;
+                    font-weight: 600;
+                }
+                .blog-news-main-content{
+                     height:auto;
+                    width: 100%;
+                     @include Column-center.column-center;
+                    align-items: flex-start;
+                    gap: 10px;
+
+                    .blog-main-cont-para-one{
+                        font-size: 25px;
+                        font-family:'Roboto Flex';
+                        font-weight: 600;
+                        color: main-color.$font-main-color;
+
+                    }.blog-main-cont-para-two{
+                        font-size: 11px;
+                        font-family:'Open Sans';
+                        font-weight: 500;
+                        letter-spacing: 1px ;
+                        line-height: 20px;
+                        color: rgb(100, 100, 100);
+
+                    }
+                    
+                
+                }
+                .read-news-btn{
+                        height: auto;
+                        width: auto;
+                        font-size: 14px;
+                        font-family: 'Funnel Display';
+                        background-color: transparent;
+                        border: none;
+                        font-weight: 600;
+                        color: rgb(61, 61, 61);
+                        @include Row-center.row-center;
+                        gap: 10px;
+                        cursor: pointer;
+                        
+                        .right-btn-icon{
+                            font-size: 17px;
+                            color: rgb(255, 55, 55);
+                            transform: translateX(0px);
+                            transition-duration: 0.5s;
+                        }
+                }
+                .read-news-btn:hover  .right-btn-icon{
+                    transform: translateX(5px);
+                    transition-duration: 0.5s;
+                }
+     
+}
+

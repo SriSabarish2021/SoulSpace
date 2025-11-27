@@ -1,3 +1,5 @@
+import Blog from '../HomePageComponents/BlogPage/Blog.jsx';
+import Footer from '../HomePageComponents/Footer/Footer.jsx';
 import GetinTouch from '../HomePageComponents/GetinTouch/GetinTouch.jsx';
 import HomeMain from '../HomePageComponents/MainHome/HomeMain.jsx';
 import Programs from '../HomePageComponents/Programs/Programs.jsx';
@@ -14,6 +16,8 @@ const HomepageAll = () => {
       <Subcription/>
       <SideBy/>
       <GetinTouch/>
+      <Blog/>
+      <Footer/>
       
     </>
   )

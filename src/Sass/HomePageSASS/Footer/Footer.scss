@@ -1,0 +1,284 @@
+@use '../../main-color';
+@use '../../Column-center';
+@use '../../Row-center';
+@use '../../Basic-needs';
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+
+
+.Footer-main-container{
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    @include Column-center.column-center;
+    .inner-bar-footer{
+        height: auto;
+        width: 100%;
+        background-color: Basic-needs.$Main-color;
+        border-radius: 15px;
+        padding: 30px 100px;
+        @include Column-center.column-center;
+        overflow: hidden;
+        justify-content: flex-start;
+        gap: 0px;
+        .footer-top-content{
+            height: auto;
+            width: 100%;
+            @include Row-center.row-center;
+            gap: 50px;
+            padding-bottom: 50px;
+            border-bottom: 2px solid rgb(255, 234, 0);
+            border-bottom-style: dashed;
+            .site-info{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(50%);
+            
+                @include Column-center.column-center;
+                align-items: flex-start;
+                justify-content: flex-start;
+                gap: 10px;
+                .logo-name-footer{
+                    height: auto;
+                    width: 100%;
+                     @include Row-center.row-center;
+                     justify-content: flex-start;
+                     
+                    gap: 10px;
+                    .footer-logo-box{
+                        height: 50px;
+                        width: 50px;
+                        background-color: white;
+                        padding: 2px;                        border-radius: 100%;
+
+
+                         .site-logo-img-footer{
+                        height: 100%;
+                        width: 100%;
+                        }
+                    }
+                    .footer-tit{
+                        font-size: 20px;
+                        font-family:'Comic Relief';
+                        color: white;
+                        font-weight: 400;
+                    }
+                   
+                }
+                .description-footer{
+                    height: auto;
+                    width: 80%;
+                    font-size: 14px;
+                    font-family:'Roboto';
+                    color: white;
+                    line-height: 25px;
+                    letter-spacing: 1px;
+                }
+
+            }
+            .subscribtion-footer{
+                height: 100%;
+                width: 100%;
+                flex: 1 1 calc(50%);
+                @include Column-center.column-center;
+                gap: 15px;
+                align-items: flex-start;
+                justify-content: flex-start;
+                .join-us-footer-txt{
+                    font-size: 22px;
+                    font-family: 'Comic Relief';
+                    font-weight: 600;
+                    color: white;
+                    align-self: flex-start;
+                }
+                .subscription-input-container{
+                    height: 50px;
+                    width: 80%;
+                    background-color: aliceblue;
+                    border-radius: 10px;
+                   
+                    padding: 5px;
+                    padding-left: 10px;
+                    
+                    @include Row-center.row-center;
+                    .footer-input{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(60%);
+                        border: none;
+                        background-color: transparent;
+                        padding-right: 10px;
+                        font-size: 14px;
+                        font-family: 'Roboto';
+                        letter-spacing: 0.5px;
+                        color: rgb(36, 36, 36);
+                    }
+                    .footer-input:focus{
+                        outline: none;
+                        border: none;
+                    }
+                    .footer-input::placeholder{
+                        font-size: 15px;
+                        font-family:'Roboto' ;
+                        @include Row-center.row-center;
+                        letter-spacing: 1px;
+
+
+                    }
+                    .footer-btn{
+                        height: 100%;
+                        width: 100%;
+                        flex: 1 1 calc(30%);
+                        background-color:Basic-needs.$sub-color;
+                        color: white;
+                        border: none;
+                        border-radius: 6px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        font-family: 'Comic Relief';
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .footer-nav-items{
+            height: auto;
+            width: 100%;
+            @include Row-center.row-center;
+            align-items: flex-start;
+            padding-top: 50px;
+            .foot-nav-tit{
+                font-size: 26px;
+                font-family: "Patrick Hand SC";
+                letter-spacing: 1px;
+                font-weight: 600;
+                color: white;
+            }
+            .list-footer-nav{
+                height: auto;
+                width: auto;
+                @include Column-center.column-center;
+                gap: 18px;
+                align-items: flex-start;
+                font-size: 16px;
+                font-family: 'Exo 2';
+                color: White;
+                .footer-nav-item{
+                   
+                    transition-duration: 0.4s;
+                    cursor: pointer;
+                }
+                .footer-nav-item:hover{
+                    transform: scale(1.07);
+                    transition-duration: 0.4s;
+                }
+
+            }
+            .value-in-foot-contact{
+                 font-size: 13px;
+                 letter-spacing: 1px;
+                font-weight: 400;
+            }
+            .contact-footer{
+                font-size: 17px;
+                font-family: 'Exo 2';
+                font-weight: 500;
+                @include Row-center.row-center;
+                gap: 5px;
+            }
+            .footer-program-nav{
+                height: auto;
+                width: 100%;
+                flex: 1 1 calc(25%);
+                @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 20px;
+            }
+            .footer-quicklink-nav{
+                height: auto;
+                width: 100%;
+                flex: 1 1 calc(25%);
+                @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 20px;
+
+
+            }
+             .footer-all-nav{
+                height: auto;
+                width: 100%;
+                flex: 1 1 calc(25%);
+                @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 20px;
+
+
+            }
+            .footer-contact-nav{
+                height: auto;
+                width: 100%;
+                flex: 1 1 calc(25%);
+                @include Column-center.column-center;
+                align-items: flex-start;
+                gap: 20px;
+
+
+            }
+            .contact-icon-box{
+                @include Row-center.row-center;
+                gap:20px;
+                .Contact-icon-path{
+                    height: 40px;
+                    width: 40px;
+                    border: 1px solid white;
+                    border-radius: 5px;
+                    @include Row-center.row-center;
+                    color: white;
+                    font-size: 20px;
+                    transition-duration: 0.3s;
+                }
+                .Contact-icon-path:hover{
+                    color: Basic-needs.$sub-color;
+                    background-color: white;
+                                        transition-duration: 0.3s;
+
+                }
+            }
+            
+        }
+        .rights-reserved-box{
+            height: auto;
+            width: 100%;
+            @include Row-center.row-center;
+            justify-content: space-between;
+            margin-top: 30px;
+            .para-copyrights{
+                font-size: 14px;
+                font-family: 'Exo 2';
+                color: white;
+                @include Row-center.row-center;
+                gap: 5px;
+              
+            }
+            .para-rights{
+                font-size: 14px;
+                font-family: 'Exo 2';
+                color: white;
+                @include Row-center.row-center;
+                gap: 5px;
+            }
+        }
+
+    }
+}

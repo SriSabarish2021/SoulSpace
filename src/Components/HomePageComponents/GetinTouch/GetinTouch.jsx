@@ -1,7 +1,9 @@
 import '../../../Sass/HomePageSASS/GetinTouch/GetinTouch.scss';
 const GetinTouch = () => {
+    
   return (
     <div className='Contact-form-input-container'>
+        <div className='style-image-one-form'></div>
       <div className='Contact-form-title'>
         <p className='title-for-contact-form'>Get Your First Free Online<span>Consultation</span></p>
       </div>
