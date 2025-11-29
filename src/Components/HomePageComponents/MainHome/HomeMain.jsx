@@ -1,4 +1,6 @@
 import '../../../Sass/HomePageSASS/MainHomeSASS/HomeMain.scss';
+import CountUp from '../../CountAni';
+import BlurText from '../../HomeTxt';
 
 const HomeMain = () => {
   return (
@@ -7,7 +9,12 @@ const HomeMain = () => {
             <div className="title-content-holder">
                 <div className="title-top-line"></div>
                 <div className="title-para">
-                    <p className='title-para-cont-home'>Private mental health <br />consultation from a <br /><span className='span-in-home-title'>Professional</span></p>
+                    <p className='title-para-cont-home'>Private mental health <br />consultation from a <br /><BlurText text="Professional"
+                        delay={100}
+                        animateBy="words"
+                        direction="top"
+                        className="text-2xl mb-8 span-in-home-title"
+                        /></p>
                 </div>
                 <p className='title-sub-para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum reprehenderit mollitia rem sunt voluptatem repudiandae corrupti vitae explicabo praesentium repellat.</p>
                 <div className="home-page-main-btn-container">
@@ -23,17 +30,36 @@ const HomeMain = () => {
             </div>
             <div className="home-page-analysis-bar">
                 <div className="analysis-container">
-                    <p className='analysis-cont-one'>20+</p>
+                    
+                    <p className='analysis-cont-one'><CountUp
+                    from={0}
+                    to={140}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"/>+</p>
                     <p className='analysis-line'></p>
                     <p className='analysis-cont-two'>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div className="analysis-container">
-                    <p className='analysis-cont-one'>20+</p>
+                    <p className='analysis-cont-one'><CountUp
+                    from={0}
+                    to={50}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"/>+</p>
                     <p className='analysis-line'></p>
                     <p className='analysis-cont-two'>Lorem ipsum dolor sit amet.</p>
                 </div>
                 <div className="analysis-container">
-                    <p className='analysis-cont-one'>20+</p>
+                    <p className='analysis-cont-one'><CountUp
+                    from={0}
+                    to={30}
+                    separator=","
+                    direction="up"
+                    duration={1}
+                    className="count-up-text"/>+</p>
                     <p className='analysis-line'></p>
                     <p className='analysis-cont-two'>Lorem ipsum dolor sit amet.</p>
                 </div>

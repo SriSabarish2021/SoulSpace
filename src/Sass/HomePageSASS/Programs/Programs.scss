@@ -1,6 +1,7 @@
 @use '../../Column-center';
 @use '../../Row-center';
 @use '../../Basic-needs';
+@use '../../main-color';
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
@@ -78,7 +79,9 @@
             padding: 40px;
             @include Column-center.column-center;
             gap: 15px;
-            align-items: flex-start;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
             .Card-image{
                 height: auto;
                 width: auto;
@@ -161,8 +164,259 @@
             }
                 
             }
+            .card-view-more-container{
+                height: 100%;
+                width: 100%;
+                @include Column-center.column-center;
+                position: absolute;
+                background-color: Basic-needs.$color-for-view-more-box;
+                border-radius: 40px;
+                z-index: 10;
+                transform: translateY(300px) scale(0) rotate(0deg);
+                transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+                opacity: 0;
+                transition-duration: 0.5s;
+                padding: 30px 30px;
+                @include Column-center.column-center;
+                gap: 20px;
+                .close-view-more{
+                    position: absolute;
+                    color: white;
+                    top: 30px;
+                    right: 30px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    transform: scale(1);
+                    transition-duration: 0.3s;
+                }
+                .close-view-more:hover{
+                    transform: scale(1.1);
+                    transition-duration: 0.3s;
+                }
+
+                .hovering-content-container{
+                    height: auto;
+                    width: 100%;
+                    @include Column-center.column-center;
+                    gap: 15px;
+                    align-items: flex-start;
+
+                    .difficulty-level-hover-bar{
+                            height:auto;
+                            width: auto;
+                            padding: 6px 25px;
+                            background-color: rgb(255, 245, 245);
+                            @include Column-center.column-center;
+                            border-radius: 3px;
+                            font-size: 13px;
+                            font-family: 'Overlock';
+                            font-weight: 600;
+                            color: rgb(45, 45, 45);
+                            letter-spacing: 1px;
+
+                
+                    }
+                    .hover-title{
+                        font-size: 22px;
+                        font-weight: 600;
+                        font-family: 'Exo 2';
+                        color: rgb(255, 255, 255);
+                        letter-spacing: 1px;
+                    }
+                    .star-para-hovering{
+                        font-size: 17px;
+                        color: rgb(255, 244, 30);
+                        @include Row-center.row-center;
+                        gap:45px;
+                        .star-hover{
+                            @include Row-center.row-center;
+                            gap: 5px;
+                        }
+                        .star-hover-cont{
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            color: white;
+                        }
+                    }
+                    .hover-amount{
+                        font-size: 20px;
+                        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                        color: white;
+                    }
+                    .hover-sub-title{
+                        width: 100%;
+                        text-align: justify;
+                        font-size: 14px;
+                        font-family: 'Delius';
+                        color: white;
+                        letter-spacing: 1px;
+                        line-height: 26px;
+                    }
+                    .prog-info-hovering{
+                        word-wrap: 100%;
+                         @include Row-center.row-center;
+                        gap: 30px;
+                        .hover-program-info-para-one{
+                            @include Row-center.row-center;
+                            gap: 8px;
+                            font-size: 15px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            color: white;
+                            padding-right: 30px;
+                            border-right: 1px solid white
+                        }.hover-program-info-para-two{
+                            @include Row-center.row-center;
+                            gap: 8px;
+                            font-size: 15px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            color: white;
+
+                        }
+                        .icon-hover{
+                        color: white;
+                        font-size: 16px;
+                    }
+                    }
+                   
+                }
+
+                .hovering-btn-container{
+                    height: auto;
+                    width: 100%;
+                    @include Row-center.row-center;
+                    justify-content: flex-start;
+                    gap: 30px;
+
+                    .hover-enroll-btn{
+                        cursor: pointer;
+                        height: 35px;
+                        width: 60%;
+                        overflow: hidden;
+                        
+                        .hover-enroll-btn-insider{
+                            height: 100%;
+                            width: 100%;
+                            background-color:Basic-needs.$sub-color;
+                            border: none;
+                            color: rgb(245, 245, 245);
+                            font-size: 15px;
+                            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                            letter-spacing: 1px;
+                            border-radius: 5px;
+                            @include Row-center.row-center;
+                            overflow: hidden;
+                            position: relative;
+                            z-index: 1;
+                            transition-duration: 0.4s;
+                              .prog-enroll-design-one{
+                            position: absolute;
+                            height: 100%;
+                            width: 0%;
+                            left: 0px;
+                            background: #fffce6;
+                            background: linear-gradient(90deg, rgba(255, 252, 230, 1) 0%, rgba(255, 255, 255, 1) 33%);
+                            z-index: -1;
+                            transition-duration: 0.6s;
+
+                            }
+                            .prog-enroll-design-two{
+                                position: absolute;
+                                height: 100%;
+                                width: 0%;
+                                right: 0px;
+                                background: #ffffff;
+                                background: linear-gradient(90deg, rgba(255, 255, 255, 1) 77%, rgba(255, 252, 230, 1) 100%);           z-index: -1;
+                                transition-duration: 0.6s;
+
+                            }
+                        }
+                        .hover-enroll-btn-insider:hover{
+                            color: Basic-needs.$Main-color;
+                            transition-duration: 0.4s;
+                        }
+                        .hover-enroll-btn-insider:hover .prog-enroll-design-one{
+                        width: 60%;
+                        
+                        transition-duration: 0.6s;
+                        }.hover-enroll-btn-insider:hover .prog-enroll-design-two{
+                            width: 60%;
+                            
+                            transition-duration: 0.6s;
+                        }
+                      
+                    }
+
+                   
+                   
+                    .hover-add-favorite-btn{
+                        height: 40px;
+                        width: 40px;
+                        background-color: white;
+                        color: main-color.$main-color-for-app;
+                        @include Row-center.row-center;
+                        font-size: 18px;
+                        border-radius: 100%;
+                        position: relative;
+                        cursor: pointer;
+                        .heart-transition{
+                            transition-duration: 0.4s;
+                            transform: rotate3d(0,0,0,0deg);
+                        }
+                        
+                        .hover-mess-box{
+                            position: absolute;
+                            height: 20px;
+                            width: 70px;
+                            border: 1px solid main-color.$border-light-color;
+                            font-size: 8px;
+                            opacity: 0;
+                            transform: translateY(30px) scale(0);
+                            transition-duration: 0.5s;
+                            @include Row-center.row-center;
+                            font-family: 'Roboto';
+                            color: rgb(53, 53, 53);
+                            font-weight: 600;
+                            background-color: white;
+                            border-radius: 3px;
+                            bottom: 110%;
+                            .arrow-in-hover-mess{
+                                position: absolute;
+                                height: 8px;
+                                width: 8px;
+                                background-color: rgb(255, 255, 255);
+                               border-bottom:1px solid main-color.$border-light-color;
+                               border-right: 1px solid main-color.$border-light-color;
+                                transform: rotate(45deg);
+                                bottom: -4px;
+                                
+                            }
+                        }
+
+                    }
+                    .hover-add-favorite-btn:hover .heart-transition{
+                            transition-duration: 0.5s;
+                            transform: rotate3d(2,6,3,360deg);
+                        }
+                    .hover-add-favorite-btn:hover .hover-mess-box{
+                        opacity: 1;
+                        transform:translateY(0px) scale(1);
+                        transition-duration: 0.5s;
+                    }
+                }
+            }
+            .view-more-about{
+                transform: translateY(0px) scale(1) rotate(360deg); 
+                transition-timing-function:cubic-bezier(.34,1.56,.64,1);
+                opacity: 1;
+                transition-duration: 0.6s;
+                
+            }
+            
+            
             
         }
+      
         .card-for-booking-detail{
             position: relative;
             padding: 0px 0px 25px 0px;   
@@ -170,6 +424,8 @@
             @include Column-center.column-center;
             justify-content: flex-start;
             gap: 10px;
+            z-index: 0;
+            overflow: visible;
             .round-design-booking-date{
                 position: absolute;
                 height: 60px;
@@ -181,6 +437,7 @@
                 background-repeat: no-repeat;
                 background-size: contain;
                 animation: rotatedesign-student-join 8s linear infinite;
+              
             }
             @keyframes rotatedesign-student-join {
                 0%{

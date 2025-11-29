@@ -1,8 +1,44 @@
 import '../../../Sass/HomePageSASS/Programs/Programs.scss';
 import { ImAngry2 } from "react-icons/im";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { PiClock } from "react-icons/pi";
+import { PiReadCvLogo } from "react-icons/pi";
+import { IoMdCloseCircleOutline } from "react-icons/io";
 
 const Programs = () => {
+
+
+  let showdetailscard=(name)=>{
+    let otherelementscard=document.querySelectorAll(".card-view-more-container")
+    otherelementscard.forEach(element => {
+    
+    if (element.className.includes('view-more-about')) {
+       console.log('hello');
+       element.classList.remove("view-more-about")
+        
+      }
+      
+        let getelement=document.querySelector(`.${name}`).querySelector(".card-view-more-container")
+        getelement.classList.add("view-more-about")
+        console.log('no');
+        
+      
+      
+    });
+ 
+  }
+   let closedetailscard=()=>{
+    let otherelementscard=document.querySelectorAll(".card-view-more-container")
+    otherelementscard.forEach(element => {
+    
+    if (element.className.includes('view-more-about')) {
+       
+       element.classList.remove("view-more-about")
+        
+      }
+    });
+ 
+  }
   return (
     <div className='Programs-offered-main-container'>
       <div className='Programs-offered-title'>
@@ -14,7 +50,7 @@ const Programs = () => {
         </div>
       </div>
       <div className='Programs-offered-main-cards'>
-        <div className="program-cards-design">
+        <div className="program-cards-design card-design-1">
           <div className='Card-image'>
             <ImAngry2/>
           </div>
@@ -24,15 +60,44 @@ const Programs = () => {
               <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
             </div>
             <div className='card-view-more'>
-              <div className='card-view-btn'>
+              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-1'}`)}>
                  <div className='card-view-btn-design'></div>
                   <p>View More</p>
               </div>
             </div>
           </div>
+          <div className='card-view-more-container'>
+              <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
+                <div className='hovering-content-container'>
+                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
+                  <p className='hover-title'>dfdf</p>
+                
+                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
+                  <div className='prog-info-hovering'>
+                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
+                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
+                  </div>
+                </div>
+                <div className='hovering-btn-container'>
+                  <div className='hover-enroll-btn'>
+                    
+                      <div className='hover-enroll-btn-insider'>
+                        Enroll Now
+                        <div className='prog-enroll-design-one'></div>
+                        <div className='prog-enroll-design-two'></div>
+                      </div>
+                  
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+            
+          </div>
           
         </div>
-        <div className="program-cards-design">
+        <div className="program-cards-design card-design-2">
           <div className='Card-image'>
             <ImAngry2/>
           </div>
@@ -42,15 +107,44 @@ const Programs = () => {
               <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
             </div>
             <div className='card-view-more'>
-              <div className='card-view-btn'>
+              <div className='card-view-btn'  onClick={()=>showdetailscard(`${'card-design-2'}`)}>
                  <div className='card-view-btn-design'></div>
                   <p>View More</p>
               </div>
             </div>
           </div>
-          
+            <div className='card-view-more-container'>
+                <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
+                <div className='hovering-content-container'>
+                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
+                  <p className='hover-title'>dfdf</p>
+                
+                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
+                  <div className='prog-info-hovering'>
+                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
+                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
+                  </div>
+                </div>
+                <div className='hovering-btn-container'>
+                  <div className='hover-enroll-btn'>
+                    
+                      <div className='hover-enroll-btn-insider'>
+                        Enroll Now
+                        <div className='prog-enroll-design-one'></div>
+                        <div className='prog-enroll-design-two'></div>
+                      </div>
+                  
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+            
+          </div>
+                    
         </div>
-        <div className="program-cards-design">
+        <div className="program-cards-design card-design-3">
           <div className='Card-image'>
             <ImAngry2/>
           </div>
@@ -60,15 +154,45 @@ const Programs = () => {
               <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
             </div>
             <div className='card-view-more'>
-              <div className='card-view-btn'>
+              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-3'}`)}>
                  <div className='card-view-btn-design'></div>
                   <p>View More</p>
               </div>
             </div>
           </div>
+           <div className='card-view-more-container'>
+                          <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
+
+                <div className='hovering-content-container'>
+                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
+                  <p className='hover-title'>dfdf</p>
+                
+                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
+                  <div className='prog-info-hovering'>
+                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
+                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
+                  </div>
+                </div>
+                <div className='hovering-btn-container'>
+                  <div className='hover-enroll-btn'>
+                    
+                      <div className='hover-enroll-btn-insider'>
+                        Enroll Now
+                        <div className='prog-enroll-design-one'></div>
+                        <div className='prog-enroll-design-two'></div>
+                      </div>
+                  
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+            
+          </div>
           
         </div>
-        <div className="program-cards-design">
+        <div className="program-cards-design card-design-4">
           <div className='Card-image'>
             <ImAngry2/>
           </div>
@@ -78,15 +202,45 @@ const Programs = () => {
               <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
             </div>
             <div className='card-view-more'>
-              <div className='card-view-btn'>
+              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-4'}`)}>
                  <div className='card-view-btn-design'></div>
                   <p>View More</p>
               </div>
             </div>
           </div>
+           <div className='card-view-more-container'>
+                          <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
+
+                <div className='hovering-content-container'>
+                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
+                  <p className='hover-title'>dfdf</p>
+                
+                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
+                  <div className='prog-info-hovering'>
+                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
+                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
+                  </div>
+                </div>
+                <div className='hovering-btn-container'>
+                  <div className='hover-enroll-btn'>
+                    
+                      <div className='hover-enroll-btn-insider'>
+                        Enroll Now
+                        <div className='prog-enroll-design-one'></div>
+                        <div className='prog-enroll-design-two'></div>
+                      </div>
+                  
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+            
+          </div>
           
         </div>
-        <div className="program-cards-design">
+        <div className="program-cards-design card-design-5">
           <div className='Card-image'>
             <ImAngry2/>
           </div>
@@ -96,11 +250,41 @@ const Programs = () => {
               <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
             </div>
             <div className='card-view-more'>
-              <div className='card-view-btn'>
+              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-5'}`)}>
                   <p>View More</p>
                   <div className='card-view-btn-design'></div>
               </div>
             </div>
+          </div>
+           <div className='card-view-more-container'>
+                          <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
+
+                <div className='hovering-content-container'>
+                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
+                  <p className='hover-title'>dfdf</p>
+                
+                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
+                  <div className='prog-info-hovering'>
+                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
+                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
+                  </div>
+                </div>
+                <div className='hovering-btn-container'>
+                  <div className='hover-enroll-btn'>
+                    
+                      <div className='hover-enroll-btn-insider'>
+                        Enroll Now
+                        <div className='prog-enroll-design-one'></div>
+                        <div className='prog-enroll-design-two'></div>
+                      </div>
+                  
+                  </div>
+                  
+                  
+                  
+                  
+                </div>
+            
           </div>
           
         </div>

@@ -3,7 +3,23 @@ const GetinTouch = () => {
     
   return (
     <div className='Contact-form-input-container'>
-        <div className='style-image-one-form'></div>
+        <div className="heart-img-design-one heart-one-design"></div>
+        <div className="heart-img-design-one heart-two-design"></div>
+        <div className="heart-img-design-one heart-three-design"></div>
+        <div className="heart-img-design-one heart-four-design"></div>
+        <div className="heart-img-design-one heart-five-design"></div>
+        <div className="heart-img-design-one heart-six-design"></div>
+        <div className="heart-img-design-one heart-seven-design"></div>
+        <div className="heart-img-design-one heart-eight-design"></div>
+        <div className="heart-img-design-one heart-nine-design"></div>
+        <div className="heart-img-design-one heart-ten-design"></div>
+        <div className="heart-img-design-one heart-eleven-design"></div>
+        <div className="heart-img-design-one heart-twelve-design"></div>
+        <div className="heart-img-design-one heart-13-design"></div>
+        <div className="heart-img-design-one heart-14-design"></div>
+        <div className="heart-img-design-one heart-15-design"></div>
+        <div className="heart-img-design-one heart-16-design"></div>
+        <div className='style-image-one-form '></div>
       <div className='Contact-form-title'>
         <p className='title-for-contact-form'>Get Your First Free Online<span>Consultation</span></p>
       </div>
