@@ -1,7 +1,7 @@
 import '../../Sass/Curve-Mover.scss';
 import { useRef, useLayoutEffect, useState } from 'react';
 import {
-  
+  motion,
   useScroll,
   useSpring,
   useTransform,
