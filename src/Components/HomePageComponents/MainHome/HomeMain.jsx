@@ -1,8 +1,32 @@
+import { useRef,useEffect } from 'react';
 import '../../../Sass/HomePageSASS/MainHomeSASS/HomeMain.scss';
 import CountUp from '../../CountAni';
 import BlurText from '../../HomeTxt';
 
 const HomeMain = () => {
+   /*  let imageref=useRef(null)
+   let imageslider = () => {
+    let img_arr = ["/heart-2.png", "/heart.png"];
+    let index = 0;
+
+            setInterval(() => {
+                console.log(img_arr[index]); 
+                imageref.current.src=`${img_arr[index]}`
+                index++;
+
+                if (index >= img_arr.length) {
+                    index = 0;
+                }
+            }, 3000); 
+        };
+
+            imageslider();
+ */
+
+    
+    
+    
+    
   return (
     <div className='Home-Page-Main'>
         <div className="homepage-cont-side">
@@ -73,6 +97,7 @@ const HomeMain = () => {
             </div>
             
         </div>
+        {/* <img ref={imageref}   alt="" className='mobile-view-bg'/> */}
       
     </div>
   )

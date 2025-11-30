@@ -12,7 +12,7 @@ const HomepageAll = () => {
   return (
     <>
       <HomeMain/>
-      <ScrollVelocity texts={['React Bits React Bits React Bits', 'Scroll Down Scroll Down Scroll Down']} 
+      {/* <ScrollVelocity texts={['React Bits React Bits React Bits', 'Scroll Down Scroll Down Scroll Down']} 
         velocity={100} 
         className="custom-scroll-text"/>
       <Programs/>
@@ -21,7 +21,7 @@ const HomepageAll = () => {
       <SideBy/>
       <GetinTouch/>
       <Blog/>
-      <Footer/>
+      <Footer/> */}
       
     </>
   )

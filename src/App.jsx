@@ -8,7 +8,7 @@ function App() {
 
   return (
     <div className='website-main-container'>
-      <Nav></Nav>
+      {/* <Nav></Nav> */}
       <Routes>
         <Route path='/'>
           <Route index element={<HomepageAll/>}/>
