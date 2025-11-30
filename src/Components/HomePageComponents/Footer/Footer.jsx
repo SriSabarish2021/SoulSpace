@@ -41,10 +41,10 @@ const Footer = () => {
           <div className='footer-quicklink-nav'>
             <p className='foot-nav-tit'>Quick Links</p>
             <div className='list-footer-nav'>
-              <p >Home</p>
-              <p >About Us</p>
-              <p >Programs</p>
-              <p >Contact</p>
+              <p  className='footer-nav-item'>Home</p>
+              <p  className='footer-nav-item'>About Us</p>
+              <p  className='footer-nav-item'>Programs</p>
+              <p  className='footer-nav-item'>Contact</p>
             </div>
           </div>
           <div className='footer-all-nav'>

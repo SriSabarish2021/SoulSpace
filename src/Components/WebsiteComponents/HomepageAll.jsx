@@ -20,8 +20,8 @@ const HomepageAll = () => {
       <Subcription/>
       <SideBy/>
       <GetinTouch/>
-      <Blog/>
-      <Footer/> */}
+      <Blog/> */}
+      <Footer/>
       
     </>
   )
