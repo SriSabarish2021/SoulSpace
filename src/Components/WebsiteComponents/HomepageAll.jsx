@@ -16,12 +16,12 @@ const HomepageAll = () => {
         velocity={100} 
         className="custom-scroll-text"/>
       <Programs/>
-      <Qualification/>
+      <Qualification/>*/}
       <Subcription/>
-      <SideBy/>
+      {/*<SideBy/>
       <GetinTouch/>
       <Blog/> */}
-      <Footer/>
+     {/*  <Footer/> */}
       
     </>
   )

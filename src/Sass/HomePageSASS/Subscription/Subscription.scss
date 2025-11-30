@@ -29,6 +29,7 @@
     @include Column-center.column-center;
     gap: 80px;
     background-color: #f6fffe;
+    overflow: hidden;
    .Pricing-plan-title-container{
         height: auto;
         width: 100%;
@@ -202,4 +203,183 @@
         
    }
 
+}
+
+
+
+@media screen and  (max-width:1180px) {
+    .Subscription-main-page-container{
+        padding: 50px 20px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 50px 75px;
+    }
+}
+
+
+@media screen and  (max-width:1090px) {
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-one{
+        font-size: 40px;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div{
+        width: 50%;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-two{
+        font-size: 14px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container{
+        gap: 30px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 45px 60px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name{
+        font-size: 24px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para{
+        font-size: 40px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features{
+        font-size: 14px;
+        gap: 15px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features{
+        font-size: 16px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box{
+        padding: 5px 30px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and  (max-width:915px) {
+    .Subscription-main-page-container{
+        padding: 50px 0px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 40px 55px;
+    }
+}
+
+
+@media screen and  (max-width:870px) {
+    .Subscription-main-page-container .Pricing-plan-main-container{
+        gap: 25px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name{
+        font-size: 23px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para{
+        font-size: 36px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box{
+        gap: 14px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        gap: 28px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features{
+        font-size: 13px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features{
+        font-size: 14px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and  (max-width:830px) {
+    .Subscription-main-page-container .Pricing-plan-main-container{
+        gap: 20px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 35px 40px;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-two{
+        font-size: 13px;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div{
+        width: 60%;
+    }
+}
+
+
+
+@media screen and  (max-width:740px) {
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 35px;
+    }
+}
+
+
+@media screen and  (max-width:700px) {
+    .Subscription-main-page-container .Pricing-plan-main-container{
+        flex-direction: column;
+    }
+    .Subscription-main-page-container{
+        gap: 40px;
+        padding: 30px 0px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 45px 80px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .pricing-middle{
+        transition: none;
+        transform: none;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div{
+        
+        width: 70%;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name{
+        font-size: 26px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para{
+        font-size: 40px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features{
+        font-size: 15px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features{
+        font-size: 16px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box{
+        padding: 6px 45px;
+        font-size: 16px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container{
+        gap: 25px;
+    }
+}
+
+
+@media screen and  (max-width:400px) {
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-one{
+        font-size: 35px;
+    }
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 45px 70px;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div{
+        width: 90%;
+    }
+}
+
+@media screen and  (max-width:380px) {
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features{
+        font-size: 14px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features{
+        font-size: 15px;
+    }
+}
+
+
+@media screen and  (max-width:360px) {
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+    padding: 45px 55px;
+}
 }
