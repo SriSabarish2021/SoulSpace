@@ -5,6 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Nav = () => {
   return (
@@ -44,6 +46,9 @@ const Nav = () => {
             <a href='#' className='nav-link-para'>About us</a>
              <a href='#' className='nav-link-para'>Programs <FaAngleRight className='arrow-change-icon'/></a>
               <a href='#' className='nav-link-para'>Contact</a>
+        </div>
+        <div className='mobile-burger-menu'>
+          <RxHamburgerMenu/>
         </div>
       </div>
     </div>

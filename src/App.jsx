@@ -8,12 +8,12 @@ function App() {
 
   return (
     <div className='website-main-container'>
-      {/* <Nav></Nav> */}
-      <Routes>
+      <Nav></Nav>
+      {/* <Routes>
         <Route path='/'>
           <Route index element={<HomepageAll/>}/>
         </Route>
-      </Routes>
+      </Routes> */}
     </div>
   )
 }
