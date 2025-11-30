@@ -19,6 +19,7 @@
     @include Column-center.column-center;
     align-items: flex-start;
     gap:30px;
+    overflow: hidden;
     .programs-offered-title-inner{
         height: auto;
         width: auto;
@@ -564,4 +565,406 @@
         
     }
 
+}
+
+
+
+@media screen and  (max-width:1350px) {
+
+    .Programs-offered-main-container {
+        padding: 80px 50px;
+}
+}
+
+
+@media screen and  (max-width:1270px) {
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        padding: 0px 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        column-gap: 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        padding: 0px;
+    }
+}
+
+@media screen and  (max-width:1200px) {
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        width: 320px;
+    }
+    .Programs-offered-main-container{
+        padding: 60px 40px;
+    }
+     .Programs-offered-main-container .Programs-offered-main-cards{
+        column-gap: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        padding: 35px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    }
+}
+
+@media screen and  (max-width:1100px) {
+    .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main,.Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main .span-in-offer-tit{
+        font-size: 42px;
+    }
+    .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-small{
+        font-size: 14px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-image{
+        font-size: 40px;
+    }.Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .sub-tit-for-card{
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt{
+        gap: 12px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-view-more .card-view-btn{
+        font-size: 14px;
+    }
+    .Programs-offered-main-container{
+        padding: 50px 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        padding: 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        width: 280px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .booking-card-para-one{
+        font-size: 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .location-detail-in-card .location-detail-in-card{
+        font-size: 12px;
+    }.Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .location-detail-in-card{
+        font-size: 18px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .round-design-booking-date{
+        height: 50px;
+        width: 50px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days .day-of-one-booking .day-of-bookin-time .day-of-bookin-time-para-one{
+        font-size: 14px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days .day-of-one-booking .day-of-bookin-time .day-of-bookin-time-para-two{
+        font-size: 12px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-date-program-btn{
+        padding: 8px 50px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days{
+        padding: 0px 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding-bottom: 15px;
+    }
+}
+
+
+@media screen and  (max-width:930px) {
+ .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        width: 320px;
+        padding: 35px 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        column-gap: 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-image{
+        font-size: 45px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 27px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .sub-tit-for-card{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-view-more .card-view-btn{
+        font-size: 15px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        gap: 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        border-radius: 30px;
+    }
+    .Programs-offered-main-container{
+        padding: 50px 40px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card{
+        padding: 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card{
+        border-radius: 30px 30px 0px 0px;
+    }
+}
+
+
+@media screen and  (max-width:750px) {
+    .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main, .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main .span-in-offer-tit{
+        font-size: 40px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        width: 300px;
+        padding: 35px 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+    .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main .span-in-offer-tit .under-line-we-offer{
+        left: 10px;
+    }
+}
+
+@media screen and  (max-width:700px) {
+    .Programs-offered-main-container{
+        padding: 40px 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        width: 280px;
+        padding: 30px 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .sub-tit-for-card{
+        font-size: 14px;
+       
+        line-height: 22px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-view-more .card-view-btn{
+        font-size: 14px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-view-more .card-view-btn{
+        padding: 8px 15px;
+    }
+}
+
+
+@media screen and  (max-width:640px) {
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        column-gap: 10px;
+       
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+         width: 100%;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        padding: 35px 15px;
+        border-radius: 25px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 23px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-image{font-size: 42px;}
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .sub-tit-for-card{
+        font-size: 13px;
+    }
+    .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main, .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main .span-in-offer-tit{
+        font-size: 35px;
+    }
+    .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-small{
+        font-size: 13px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+}
+
+
+@media screen and  (max-width:550px) {
+    .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main, .Programs-offered-main-container .programs-offered-title-inner .Programs-offer-para-main .span-in-offer-tit{
+        font-size: 32px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        row-gap: 35px;
+    }
+    
+   
+     .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        padding: 35px 15px;
+        border-radius: 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card{
+        border-radius: 20px 20px 0px 0px;
+    }
+}
+
+@media screen and  (max-width:510px) {
+    .Programs-offered-main-container{
+        padding: 30px 15px;
+    }
+     .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .booking-card-para-one{
+        font-size: 21px;
+     }
+     .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .location-detail-in-card .location-detail-in-card{
+        font-size: 10px;
+     }
+     .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .location-detail-in-card{
+        font-size: 16px;
+     }
+     .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        gap: 15px;
+     }
+     .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days .day-of-one-booking .day-of-bookin-time .day-of-bookin-time-para-one{
+        font-size: 13px;
+     }
+
+     .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days{
+        gap: 12px;
+     }
+     .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-date-program-btn{
+        padding: 6px 40px;
+        font-size: 14px;
+     }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 21px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        column-gap: 20px;
+    }
+}
+
+@media screen and  (max-width:470px) {
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card{
+        padding:15px 10px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days{
+        padding: 0px 10px;
+        gap: 12px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        gap: 18px;
+    }
+}
+@media screen and  (max-width:460px) {
+.Programs-offered-main-container{
+        padding: 30px 10px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        padding: 30px 10px;
+       
+        border-radius: 10px;
+    }
+   
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 19px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .sub-tit-for-card{
+        font-size: 12px;
+    }
+        .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .round-design-booking-date{
+        right: 0px;
+    }
+}
+
+
+@media screen and  (max-width:410px) {
+ .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        padding: 30px 10px;
+        width: 160px;
+        border-radius: 10px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards{
+        column-gap: 15px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 17px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .sub-tit-for-card{
+        font-size: 11px;
+        line-height: 20px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-view-more .card-view-btn{
+        font-size: 13px;
+    }
+           .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .booking-card-para-one{
+        font-size: 18px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .location-detail-in-card .location-detail-in-card{
+        font-size: 10px;
+    }.Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card{
+        padding: 15px 6px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days .day-of-one-booking .day-of-bookin-time .day-of-bookin-time-para-one{
+        font-size: 12px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-days .day-of-one-booking .day-of-bookin-time .day-of-bookin-time-para-two{
+        font-size: 11px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-date-program-btn{
+        padding: 6px 20px;
+        font-size: 13px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card{
+        border-radius: 10px 10px 0px 0px;
+    }
+}
+
+@media screen and  (max-width:370px) {
+ .Programs-offered-main-container .Programs-offered-main-cards{
+        column-gap: 5px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
+        padding: 30px 10px;
+        width: 140px;
+        border-radius: 10px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .main-tit-for-card{
+        font-size: 16px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-info-txt .sub-tit-for-card{
+        font-size: 10px;
+        line-height: 18px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail{
+        padding: 0px;
+    }
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design .Card-info .card-view-more .card-view-btn{padding: 7px 15px;}
+    .Programs-offered-main-container .Programs-offered-main-cards .card-for-booking-detail .booking-card .location-detail-in-card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

@@ -14,11 +14,11 @@ const HomepageAll = () => {
      {/* <HomeMain/>
        <ScrollVelocity texts={['React Bits React Bits React Bits', 'Scroll Down Scroll Down Scroll Down']} 
         velocity={100} 
-        className="custom-scroll-text"/>
+        className="custom-scroll-text"/>*/}
       <Programs/>
-      <Qualification/>*/}
+      {/* <Qualification/>
       <Subcription/>
-      {/*<SideBy/>
+     <SideBy/>
       <GetinTouch/>
       <Blog/> */}
      {/*  <Footer/> */}

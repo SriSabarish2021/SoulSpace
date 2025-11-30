@@ -300,21 +300,21 @@ const Programs = () => {
           <div className="booking-days">
             <div className='day-of-one-booking'>
               <div className='day-of-bookin-time'>
-                <p className='day-of-bookin-time-para-one'>Monday-Friday</p>
+                <p className='day-of-bookin-time-para-one'>{window.innerWidth>600?'Monday-Friday':'Mon-Fri'}</p>
                 <p className='day-of-bookin-time-para-two'>9AM-7PM</p>
               </div>
               <span className='line-under-day-booking'></span>
             </div>
             <div className='day-of-one-booking'>
               <div className='day-of-bookin-time'>
-                <p className='day-of-bookin-time-para-one lighter-day'>Saturday</p>
+                <p className='day-of-bookin-time-para-one lighter-day'>{window.innerWidth>600?'Saturday':'Sat'}</p>
                 <p className='day-of-bookin-time-para-two lighter-day'>9AM-4PM</p>
               </div>
               <span className='line-under-day-booking'></span>
             </div>
             <div className='day-of-one-booking'>
               <div className='day-of-bookin-time'>
-                <p className='day-of-bookin-time-para-one lighter-day'>Sunday</p>
+                <p className='day-of-bookin-time-para-one lighter-day'>{window.innerWidth>600?'Sunday':'Sun'}</p>
                 <p className='day-of-bookin-time-para-two lighter-day'>Closed</p>
               </div>
               <span className='line-under-day-booking'></span>
