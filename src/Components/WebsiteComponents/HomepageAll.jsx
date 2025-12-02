@@ -1,6 +1,7 @@
 import Blog from '../HomePageComponents/BlogPage/Blog.jsx';
-import ScrollVelocity from '../HomePageComponents/Curve-Mover.jsx';
-import Footer from '../HomePageComponents/Footer/Footer.jsx';
+import 
+  ScrollVelocity
+from  '../HomePageComponents/Curve-Mover.jsx';
 import GetinTouch from '../HomePageComponents/GetinTouch/GetinTouch.jsx';
 import HomeMain from '../HomePageComponents/MainHome/HomeMain.jsx';
 import Programs from '../HomePageComponents/Programs/Programs.jsx';
@@ -8,21 +9,22 @@ import Qualification from '../HomePageComponents/Qualification/Qualification';
 import SideBy from '../HomePageComponents/SideBy/SideBy.jsx';
 import Subcription from '../HomePageComponents/Subscription/Subcription.jsx';
 
-const HomepageAll = () => {
+const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview}) => {
+  
+
   return (
     <>
-     {/* <HomeMain/>
-       <ScrollVelocity texts={['React Bits React Bits React Bits', 'Scroll Down Scroll Down Scroll Down']} 
-        velocity={100} 
-        className="custom-scroll-text"/>*/}
-      <Programs/>
-      {/* <Qualification/>
-      <Subcription/>
-     <SideBy/>
+      <HomeMain hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
+      <ScrollVelocity texts={['Digital Space Where Wvery Soul Heals And Grows', 'Connect Minds And Hearts Through Care And Comfort']}  
+      velocity={100} 
+      className="custom-scroll-text"/>
+      <Programs hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
+      <Qualification hreffunc={hreffunc}/>
+      <Subcription openwritereview={openwritereview}/>
+      <SideBy hreffunc={hreffunc}/>
       <GetinTouch/>
-      <Blog/> */}
-     {/*  <Footer/> */}
-      
+      <Blog/> 
+     
     </>
   )
 }

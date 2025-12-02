@@ -291,7 +291,7 @@
 }
 
 
-@media screen and  (max-width:1180px) {
+@media screen and  (max-width:1100px) {
     .Footer-main-container .inner-bar-footer{
         padding: 30px 40px;
     }
@@ -554,4 +554,69 @@
         font-size: 12px;
     }
     
+}
+
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+    .Footer-main-container .inner-bar-footer .footer-top-content .site-info .logo-name-footer .footer-tit{
+        font-size: 30px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .site-info .logo-name-footer .footer-logo-box{
+        height: 55px;
+        width: 55px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .site-info .description-footer{
+        font-size: 16px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .subscribtion-footer .join-us-footer-txt{
+        font-size: 26px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content{
+       align-items:  flex-start;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .subscribtion-footer .subscription-input-container .footer-input{
+        font-size: 18px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .subscribtion-footer .subscription-input-container{
+        height: 50px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .subscribtion-footer .subscription-input-container{
+        width: 100%;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .subscribtion-footer .subscription-input-container .footer-btn{
+        font-size: 18px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-nav-items .foot-nav-tit{
+        font-size: 32px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-nav-items .list-footer-nav .footer-nav-item{
+        font-size: 20px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-nav-items .footer-quicklink-nav{
+        display: none;
+    }
+    .Footer-main-container .inner-bar-footer .footer-nav-items .contact-footer{
+        font-size: 20px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-nav-items .value-in-foot-contact{
+        font-size: 15px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-nav-items .contact-icon-box .Contact-icon-path{
+        height: 45px;
+        width: 45px;
+        font-size: 25px;
+    }
+    .Footer-main-container .inner-bar-footer .rights-reserved-box .para-copyrights, .Footer-main-container .inner-bar-footer .rights-reserved-box .para-rights{
+        font-size: 17px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .site-info .description-footer{
+        font-size: 17px;
+    }
+    .Footer-main-container .inner-bar-footer{
+        padding: 30px 25px;
+    }
+    .Footer-main-container .inner-bar-footer .footer-top-content .subscribtion-footer .subscription-input-container .footer-input::placeholder{
+        font-size: 18px;
+    }
 }

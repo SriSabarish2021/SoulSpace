@@ -1,8 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap');
 
 .motion-txt-container{
     padding: 60px 0px;
     padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+    .right-velocity-shade{
+      position: absolute;
+      height: 100%;
+      width: 200px;
+
+      right: 0px;
+      z-index: 1;
+      border-radius: 50px 0px 0px 50px ;
+      background: #ffffff;
+background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 87%);
+background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 87%);
+background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 87%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
+    }
+     .left-velocity-shade{
+      position: absolute;
+      height: 100%;
+      width: 200px;
+
+      left: 0px;
+      z-index: 1;
+      border-radius: 50px 0px 0px 50px ;
+     background: #ffffff;
+background: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+background: -moz-linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#FFFFFF", GradientType=1);
+    }
 }.parallax {
   position: relative;
   overflow: hidden;
@@ -10,25 +46,97 @@
 }
 
 .scroller {
-    padding: 10px 0px;
+
   display: flex;
   white-space: nowrap;
   text-align: center;
-  font-family: "Patrick Hand SC";
-  font-size: 60px;
+  font-family: "Vast Shadow";
+  font-size:55px;
   font-weight: bold;
   letter-spacing: 1px;
-  filter: drop-shadow(0 6px 6px rgba(110, 110, 110, 0.509));
-  color: #434343;
+  
+  color: #292929;
 }
 
 .scroller span {
   flex-shrink: 0;
 }
 
-@media (min-width: 768px) {
+
+@media (max-width: 880px) {
+ .motion-txt-container .right-velocity-shade{
+
+      width: 100px;
+    }
+     .motion-txt-container .left-velocity-shade{
+
+      width: 100px;
+
+    }
+}
+
+@media (max-width: 768px) {
   .scroller {
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 55px;
+
+  }
+ 
+}
+
+
+
+@media (max-width: 608px) {
+  .scroller {
+    font-size: 50px;
+
+  }
+   .motion-txt-container .right-velocity-shade{
+
+      width: 80px;
+    }
+     .motion-txt-container .left-velocity-shade{
+
+      width: 80px;
+
+    }
+}
+@media (max-width: 508px) {
+  .scroller {
+    font-size: 40px;
+
+  }
+   .motion-txt-container .right-velocity-shade{
+
+      width:60px;
+    }
+     .motion-txt-container .left-velocity-shade{
+
+      width: 60px;
+
+    }
+}
+@media (max-width: 408px) {
+  .scroller {
+    font-size: 38px;
+
+  }.motion-txt-container .right-velocity-shade{
+
+      width:50px;
+    }
+     .motion-txt-container .left-velocity-shade{
+
+      width: 50px;
+
+    }
+}
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px) {
+    .scroller {
+
+    font-size:85px;
+
+  }
+  .motion-txt-container{
+
+      gap: 20px;
   }
 }

@@ -383,3 +383,53 @@
     padding: 45px 55px;
 }
 }
+
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-one{
+        font-size: 55px;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-two{
+        font-size: 20px;
+    }
+    .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div{
+        width: 70%;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name{
+        font-size: 40px;
+    }
+    .Subscription-main-page-container{
+        gap: 50px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para{
+        font-size: 60px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features{
+        font-size: 22px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .pricing-middle{
+        transform: none;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features{
+        font-size: 20px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features{
+        gap: 30px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box{
+        font-size: 24px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para .Amount-underline-for-plan{
+        height: 8px;
+        width: 100px;
+    }
+    .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box{
+        padding: 50px 120px;
+    }
+}

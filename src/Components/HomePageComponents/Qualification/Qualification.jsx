@@ -4,7 +4,7 @@ import { useRef } from 'react'
 // import { Video } from '@imagekit/react';
 import { Link } from 'react-router-dom';
 
-const Qualification = () => {
+const Qualification = ({hreffunc}) => {
   
 
   const getoffsetYstaffElement=useRef(null)
@@ -33,7 +33,7 @@ const Qualification = () => {
    }
    
   return (
-    <div className='staff-page-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
+    <div id='About' className='staff-page-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
       <div className='staff-page-image-container'>
         <div className='staff-page-image-box-one'>
           
@@ -119,7 +119,7 @@ const Qualification = () => {
                 /> */}
         <div className='short-title-staff-page'>
           <div className='line-img-tag'></div>
-          <p className='flexible-short-tit'>FLEXIBLE SUPPORTED LEARNING</p> 
+          <p className='flexible-short-tit'>FLEXIBLE SUPPORTED</p> 
         </div>
         
         <div className='tutor-title-content'>
@@ -128,7 +128,7 @@ const Qualification = () => {
               <p className='heading-tutor-p-two' ref={getoffsetYstaffElement}  style={{transitionDuration:'0.2s'}} >Disciplines</p>
             </div>
             <div className='sub-heading-tutor'>
-                <p className='sub-heading-tutor-p-one'> At MindSpire, our teachers are more than educators — they are mentors who ignite curiosity and inspire achievement. Their unwavering dedication shapes confident, lifelong learners ready for tomorrow.</p>
+                <p className='sub-heading-tutor-p-one'> SOUL SPACE is an innovative mobile and web-based mental wellness application designed to help individuals maintain their emotional balance, mental strength, and overall well-being. It offers a safe and accessible platform where people can communicate openly with certified psychiatrists, counselors, and therapists without the fear of judgment or stigma.</p>
             </div> 
 
           
@@ -179,11 +179,11 @@ const Qualification = () => {
             </div>
           </div>
         </div>
-        <Link to={'About-Mindspire-Institute'} style={{textDecoration:'none'}} className='btn-in-tutor-analysis'>Learn More
+        <div onClick={()=>hreffunc("Contact")} style={{textDecoration:'none'}} className='btn-in-tutor-analysis'>Learn More
           <div className='btn-animation-in-staff-page'>
 
           </div>
-        </Link>
+        </div>
       </div>
     </div>
   )

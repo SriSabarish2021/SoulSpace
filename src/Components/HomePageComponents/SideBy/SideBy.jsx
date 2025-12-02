@@ -3,9 +3,9 @@ import '../../../Sass/HomePageSASS/SideBy/SideBy.scss';
 /* import { Video } from '@imagekit/react'; */
 import { GoDotFill } from "react-icons/go";
 import { FaArrowRight } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
 
-const SideBy = ({onedisp,twodisp}) => {
+
+const SideBy = ({onedisp,twodisp,hreffunc}) => {
   return (
     <div className='side-by-elements-container'>
          {onedisp&&twodisp?
@@ -28,10 +28,10 @@ const SideBy = ({onedisp,twodisp}) => {
                         <p  className='side-by-p-two'>Recorded Session's</p>
                     </div>
                     <p className='side-by-sub-para'>All our sessions are recorded and available 24/7, so students can revisit lessons anytime at their own pace.</p>
-                    <Link to={"Providing-Education's-in-Mindspire-Institute"} style={{textDecoration:'none'}} className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
+                    <div onClick={()=>hreffunc("Contact")} style={{textDecoration:'none'}} className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
                           <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
-                    </Link>
+                    </div>
                 </div>
 
                  <div className='design-circle-two-box-one'></div>
@@ -59,10 +59,10 @@ const SideBy = ({onedisp,twodisp}) => {
                         
                     </div>
                     <p className='side-by-sub-para'>Join live sessions led by skilled educators—learn, ask,and interact directly with top educators, and grow in real time.</p>
-                    <Link to={"About-Mindspire-Institute"} style={{textDecoration:'none'}} className='btn-side-by'>Learn More <FaArrowRight className='arrow-btn-side-by'/>
+                    <div onClick={()=>hreffunc("Contact")} style={{textDecoration:'none'}} className='btn-side-by'>Learn More <FaArrowRight className='arrow-btn-side-by'/>
                        <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
-                    </Link>
+                    </div>
                 </div>
 
                 <div className='design-circle-one-box-one'></div>
@@ -90,10 +90,10 @@ const SideBy = ({onedisp,twodisp}) => {
                         
                     </div>
                     <p className='side-by-sub-para'>Join live sessions led by skilled educators—learn, ask,and interact directly with top educators, and grow in real time.</p>
-                    <Link to={"About-Mindspire-Institute"} style={{textDecoration:'none'}} className='btn-side-by'>Learn More <FaArrowRight className='arrow-btn-side-by'/>
+                    <div onClick={()=>hreffunc("Contact")} style={{textDecoration:'none'}} className='btn-side-by'>Learn More <FaArrowRight className='arrow-btn-side-by'/>
                        <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
-                    </Link>
+                    </div>
                 </div>
 
                 <div className='design-circle-one-box-one'></div>
@@ -118,10 +118,10 @@ const SideBy = ({onedisp,twodisp}) => {
                         <p  className='side-by-p-two'>Recorded Session's</p>
                     </div>
                     <p className='side-by-sub-para'>All our sessions are recorded and available 24/7, so students can revisit lessons anytime at their own pace.</p>
-                    <Link to={"Providing-Education's-in-Mindspire-Institute"} style={{textDecoration:'none'}} className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
+                    <div onClick={()=>hreffunc("Contact")} style={{textDecoration:'none'}} className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
                           <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
-                    </Link>
+                    </div>
                 </div>
 
                  <div className='design-circle-two-box-one'></div>

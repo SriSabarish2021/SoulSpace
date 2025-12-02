@@ -3,7 +3,7 @@ import '../../../Sass/HomePageSASS/MainHomeSASS/HomeMain.scss';
 import CountUp from '../../CountAni';
 import BlurText from '../../HomeTxt';
 
-const HomeMain = () => {
+const HomeMain = ({hreffunc,hrefhomefunc}) => {
    /*  let imageref=useRef(null)
    let imageslider = () => {
     let img_arr = ["/heart-2.png", "/heart.png"];
@@ -33,21 +33,21 @@ const HomeMain = () => {
             <div className="title-content-holder">
                 <div className="title-top-line"></div>
                 <div className="title-para">
-                    <p className='title-para-cont-home'>Private mental health <br />consultation from a <br /><BlurText text="Professional"
+                    <p className='title-para-cont-home'>Your Digital Space to <br />Heal and Connect with<br /><BlurText text="Professional"
                         delay={100}
                         animateBy="words"
                         direction="top"
                         className="text-2xl mb-8 span-in-home-title"
                         /></p>
                 </div>
-                <p className='title-sub-para'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum reprehenderit mollitia rem sunt voluptatem repudiandae corrupti vitae explicabo praesentium repellat.</p>
+                <p className='title-sub-para'>Digital platform that aims to bring back the power of talking, sharing, and healing. It is a space where people can connect with professional psychiatrists, counselors, and therapists in a safe, non-judgmental environment.</p>
                 <div className="home-page-main-btn-container">
                     <div className="home-page-main-btn home-page-main-btn-one">
-                        <p>Appointment</p>
+                        <p onClick={()=>hreffunc("Programs")}>Appointment</p>
                         <div className="btn-design-one"></div>
                     </div>
                     <div className="home-page-main-btn home-page-main-btn-two">
-                        <p>Learn More</p>
+                        <p onClick={()=>hreffunc("About")}>Learn More</p>
                         <div className="btn-design-two"></div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ const HomeMain = () => {
                     duration={1}
                     className="count-up-text"/>+</p>
                     <p className='analysis-line'></p>
-                    <p className='analysis-cont-two'>Lorem ipsum dolor sit amet.</p>
+                    <p className='analysis-cont-two'>Total Registered People with us.</p>
                 </div>
                 <div className="analysis-container">
                     <p className='analysis-cont-one'><CountUp
@@ -74,7 +74,7 @@ const HomeMain = () => {
                     duration={1}
                     className="count-up-text"/>+</p>
                     <p className='analysis-line'></p>
-                    <p className='analysis-cont-two'>Lorem ipsum dolor sit amet.</p>
+                    <p className='analysis-cont-two'>Our Professional Psychiatrist</p>
                 </div>
                 <div className="analysis-container">
                     <p className='analysis-cont-one'><CountUp
@@ -85,7 +85,7 @@ const HomeMain = () => {
                     duration={1}
                     className="count-up-text"/>+</p>
                     <p className='analysis-line'></p>
-                    <p className='analysis-cont-two'>Lorem ipsum dolor sit amet.</p>
+                    <p className='analysis-cont-two'>Our Center All Over Tamil Nadu</p>
                 </div>
             </div>
         </div>

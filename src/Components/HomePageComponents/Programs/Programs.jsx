@@ -5,7 +5,7 @@ import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
-const Programs = () => {
+const Programs = ({hreffunc,hrefhomefunc}) => {
 
 
   let showdetailscard=(name)=>{
@@ -40,7 +40,7 @@ const Programs = () => {
  
   }
   return (
-    <div className='Programs-offered-main-container'>
+    <div id='Programs' className='Programs-offered-main-container'>
       <div className='Programs-offered-title'>
         <div className='programs-offered-title-inner'>
           <p className='Programs-offer-para-small'>What We Offer ?</p>
@@ -56,8 +56,8 @@ const Programs = () => {
           </div>
           <div className='Card-info'>
             <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Speech therapy</p>
-              <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
+              <p className='main-tit-for-card'>Personalized Counseling</p>
+              <p className='sub-tit-for-card'>Users can book one-on-one counseling sessions with verified psychiatrists and therapists based on their emotional needs</p>
             </div>
             <div className='card-view-more'>
               <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-1'}`)}>
@@ -103,8 +103,8 @@ const Programs = () => {
           </div>
           <div className='Card-info'>
             <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Speech therapy</p>
-              <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
+              <p className='main-tit-for-card'>Age-Specific Therapy</p>
+              <p className='sub-tit-for-card'>SOUL SPACE caters to all age groups — children, teenagers, adults, and elderly individuals.</p>
             </div>
             <div className='card-view-more'>
               <div className='card-view-btn'  onClick={()=>showdetailscard(`${'card-design-2'}`)}>
@@ -150,8 +150,8 @@ const Programs = () => {
           </div>
           <div className='Card-info'>
             <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Speech therapy</p>
-              <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
+              <p className='main-tit-for-card'>24/7 Emotional Support</p>
+              <p className='sub-tit-for-card'>Users can connect with an available counselor at any time through the ―Talk Now‖</p>
             </div>
             <div className='card-view-more'>
               <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-3'}`)}>
@@ -198,8 +198,8 @@ const Programs = () => {
           </div>
           <div className='Card-info'>
             <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Speech therapy</p>
-              <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
+              <p className='main-tit-for-card'>Mood Tracker</p>
+              <p className='sub-tit-for-card'>It allows them to note feelings and thoughts — which can later be shared with their therapist for better analysis and progress tracking.</p>
             </div>
             <div className='card-view-more'>
               <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-4'}`)}>
@@ -246,8 +246,8 @@ const Programs = () => {
           </div>
           <div className='Card-info'>
             <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Speech therapy</p>
-              <p className='sub-tit-for-card'>Therapists have a minimum of 7 years of experience, and are accredited and insured to practice privately</p>
+              <p className='main-tit-for-card'>Meditation Tools</p>
+              <p className='sub-tit-for-card'>SOUL SPACE offers guided meditations, breathing exercises, relaxation music, and mindfulness sessions to help users calm your minds.</p>
             </div>
             <div className='card-view-more'>
               <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-5'}`)}>
@@ -322,7 +322,7 @@ const Programs = () => {
             
           </div>
           <div className='booking-date-program-btn'>
-            <p>Book Now</p>
+            <p onClick={()=>hreffunc("Subscribe")}>Book Now</p>
             <div className='booking-date-program-btn-design'></div>
           </div>
         </div>

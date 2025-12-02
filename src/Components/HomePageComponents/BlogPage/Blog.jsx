@@ -42,7 +42,7 @@ const Blog = () => {
         <div className='blog-news-one-div'>
           <img
               
-              src="/pshy-form-img-one.jpg"
+              src="./psy-blog-2.jpg"
               alt="Student Image"
               className='blog-image-container'
             />
@@ -60,7 +60,7 @@ const Blog = () => {
         <div className='blog-news-two-div'>
           <img
             
-            src="/pshy-form-img-one.jpg"
+            src="./psy-img-blog-2.jpg"
             alt="Student Image"
             className='blog-image-container'
             

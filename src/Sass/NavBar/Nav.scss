@@ -191,7 +191,7 @@
 }
 
 
-@media screen and  (max-width:1180px) {
+@media screen and  (max-width:1080px) {
 .nav-bar-for-website{
     padding: 0px 50px;
    }
@@ -350,5 +350,58 @@
 @media screen and  (max-width:335px) {
  .nav-bar-for-website{
         padding: 0px 10px;
+    }
+}
+
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+    .nav-bar-for-website .nav-container-for-main-navbar .nav-sections .nav-link-para{
+        font-size: 26px;
+    }
+    .nav-bar-for-website .nav-container-for-main-navbar .site-logo{
+        flex: 1 1 calc(30%);
+    }.nav-bar-for-website .nav-container-for-main-navbar .nav-sections{
+        flex: 1 1 calc(70%);
+    }
+    .nav-bar-for-website .nav-container-for-main-navbar .site-logo .site-logo-img{
+        height: 80px;
+        width: 80px;
+    }
+    .nav-bar-for-website .nav-container-for-main-navbar .site-logo .site-logo-name{
+        font-size: 31px;
+    }
+    .nav-bar-for-website .nav-container-for-search .social-link-nav .social-icons-nav{
+        height: 45px;
+        width: 45px;
+    }
+    .nav-bar-for-website .nav-container-for-search .social-link-nav .social-icons-nav .social-icon-nav{
+        font-size: 26px;
+    }
+    .nav-bar-for-website .nav-container-for-main-navbar .nav-sections{
+        gap: 25px;
+    }.nav-bar-for-website .nav-container-for-search .social-link-nav{
+        gap: 25px;
+    }
+    .nav-bar-for-website .nav-container-for-search .search-bar-nav .search-bar-container-in-nav .input-for-search{
+        width: 280px;
+    }
+    .nav-bar-for-website .nav-container-for-search .search-bar-nav .search-bar-container-in-nav{
+        padding-top: 15px;
+        padding-bottom: 15px;
+       
+    }
+    .nav-bar-for-website .nav-container-for-search .search-bar-nav .search-bar-container-in-nav .input-for-search{
+        font-size: 22px;
+    }
+     .nav-bar-for-website .nav-container-for-search .search-bar-nav .search-bar-container-in-nav .input-for-search::placeholder{
+        font-size: 22px;
+    }
+    .nav-bar-for-website .nav-container-for-search .search-bar-nav .search-icon-holder-nav{
+        height: 45px;
+        width: 45px;
+    }
+    .nav-bar-for-website .nav-container-for-search .search-bar-nav .search-icon-holder-nav .search-icon-nav{
+        font-size: 22px;
     }
 }

@@ -5,6 +5,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaRegCopyright } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -63,10 +64,10 @@ const Footer = () => {
               <p className='contact-footer'>Phone: <span className='value-in-foot-contact'>23902=322332</span></p>
               <p className='contact-footer'>Email: <span className='value-in-foot-contact'>srisabarish238@gmail.com</span></p>
               <p className='contact-icon-box'>
-                <span className='Contact-icon-path'><FaWhatsapp/></span>
-                <span className='Contact-icon-path'><FaFacebook/></span>
-                <span className='Contact-icon-path'><FaInstagram/></span>
-                <span className='Contact-icon-path'><FaXTwitter/></span>
+                <a href='https://www.linkedin.com/in/dinesh-kumar-n-a0017a327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' style={{textDecoration:'none'}} className='Contact-icon-path'><FaLinkedinIn/></a>
+                <a href='https://www.facebook.com/share/1JK8bPAbW8/'  target='_blank' style={{textDecoration:'none'}} className='Contact-icon-path'><FaFacebook/></a>
+                <a href='https://www.instagram.com/im_dinesh_06?igsh=MW5yMWJwY3lzcTRtNw=='  target='_blank' style={{textDecoration:'none'}} className='Contact-icon-path'><FaInstagram/></a>
+                <a href='https://www.instagram.com/im_dinesh_06?igsh=MW5yMWJwY3lzcTRtNw=='  target='_blank' style={{textDecoration:'none'}} className='Contact-icon-path'><FaXTwitter/></a>
               </p>
             </div>
           </div>

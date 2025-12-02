@@ -30,6 +30,7 @@
     gap: 40px;
     position: relative;
     z-index: 1;
+    overflow: hidden;
     .heart-img-design-one{
         height: 70px;
         width: 70px;
@@ -289,6 +290,7 @@
             color: rgb(133, 133, 133);
         }
         .Form-submit-btn{
+            border: none;
             padding: 12px 80px;
             border-radius: 50px;
             background-color: Basic-needs.$Main-color;
@@ -324,5 +326,277 @@
                
             }
         }
+    }
+}
+
+
+@media screen and  (max-width:1080px) {
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 42px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-form-txt,.Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .para-for-text-in-form{
+        font-size: 13px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 260px;
+        padding: 10px 10px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form{
+        border-radius: 10px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form,.Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        font-size: 13px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        gap: 30px;
+        column-gap: 80px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner{
+        gap: 30px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        font-size: 12px;
+        width: 70%;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-submit-btn{
+        padding: 10px 70px;
+        font-size: 16px;
+    }
+    .Contact-form-input-container .heart-three-design{
+        display: none;
+    }
+}
+
+
+@media screen and  (max-width:730px) {
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 40px;
+    }
+    .Contact-form-input-container{
+        padding: 50px 70px;
+        gap: 30px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields{
+        gap: 25px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        column-gap: 60px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        width: 90%;
+    }
+}
+
+
+@media screen and  (max-width:660px) {
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-form-txt, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .para-for-text-in-form{
+        font-size: 12.5px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        font-size: 12px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 240px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        gap: 30px;
+        column-gap: 40px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        line-height: 20px;
+        width: 100%;
+    }
+}
+
+
+
+@media screen and  (max-width:620px) {
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 36px;
+    }
+    .Contact-form-input-container .style-image-one-form{
+        height: 600px;
+        width: 600px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        gap: 20px;
+        column-gap: 25px;
+
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner{
+        gap: 20px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 220px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        font-size: 11px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-submit-btn{
+        font-size: 15px;
+        padding: 9px 60px;
+    }
+    .Contact-form-input-container{
+        padding: 40px 50px;
+    }
+}
+
+
+
+@media screen and  (max-width:530px) {
+ .Contact-form-input-container .Contact-form-title{
+        font-size: 34px;
+    }
+    .Contact-form-input-container .style-image-one-form{
+        height:500px;
+        width: 500px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        gap: 15px;
+        column-gap: 20px;
+
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner{
+        gap: 15px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 200px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        font-size: 11px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        height: 120px;
+    }
+    .Contact-form-input-container{
+        padding: 40px 20px;
+    }
+    .Contact-form-input-container .heart-img-design-one{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+
+@media screen and  (max-width:470px) {
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 32px;
+    }
+    .Contact-form-input-container{
+        gap: 20px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-form-txt, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .para-for-text-in-form{
+        font-size: 12px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 180px;
+        padding: 8px 8px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        column-gap: 15px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form{
+        border-radius: 8px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields{
+        gap: 15px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        font-size: 11px;
+    }
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 30px;
+    }
+}
+
+
+
+@media screen and  (max-width:400px) {
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 28px;
+    }
+    .Contact-form-input-container .heart-img-design-one{
+        height: 40px;
+        width: 40px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        column-gap: 10px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 150px;
+        padding:8px 6px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        font-size: 10.5px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        height: 110px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        line-height: 16px;
+    }
+    .Contact-form-input-container{
+        padding: 30px 5px;
+    }
+}
+
+
+@media screen and  (max-width:350px) {
+    .Contact-form-input-container .Contact-form-title .title-for-contact-form{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 30px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-form-txt, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .para-for-text-in-form{
+        font-size: 11px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container{
+        column-gap: 8px;
+    }.Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 140px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        font-size: 10px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-submit-btn{
+        font-size: 14px;
+        padding: 8px 55px;
+    }
+}
+
+
+
+@media screen and  (min-height:990px) and  (max-height:1300px) and  (max-width:990px){
+    .Contact-form-input-container .Contact-form-title{
+        font-size: 55px;
+    }
+    .Contact-form-input-container{
+        padding: 50px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-form-txt, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .para-for-text-in-form{
+        font-size: 20px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form, .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        font-size: 20px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container .input-container-form .input-box-form{
+        width: 300px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .basic-info-form-container .input-with-txt-container{
+        gap: 15px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-element-conatiner .main-message-form-container .text-area-for-message{
+        height: 200px;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .para-policy-in-form{
+        font-size: 16px;
+        width: 90%;
+    }
+    .Contact-form-input-container .Contact-form-input-fields .Form-submit-btn{
+        font-size: 26px;
+        padding: 15px 100px;
+
     }
 }

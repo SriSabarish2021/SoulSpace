@@ -1,9 +1,9 @@
 import '../../../Sass/HomePageSASS/Subscription/Subscription.scss';
 import { FaRegCheckCircle } from "react-icons/fa";
 
-const Subcription = () => {
+const Subcription = ({openwritereview}) => {
   return (
-    <div className='Subscription-main-page-container'>
+    <div id='Subscribe' className='Subscription-main-page-container'>
       <div className='Pricing-plan-title-container'>
         <div className='pricing-plan-para-div'>
           <p className='para-main-pricing-one'>Pricing Plan</p>
@@ -23,8 +23,8 @@ const Subcription = () => {
             <p className='para-in-feature-pricing'><span className='Tick-icon-in-features'><FaRegCheckCircle/></span>Lorem ipsum dolor</p>
             
           </div>
-          <div className='button-in-pricing-box'>
-            <p>Buy Now</p>
+          <div className='button-in-pricing-box' onClick={()=>openwritereview('BasicPlan')}>
+            <p >Buy Now</p>
             <div className='button-design-for-pricing-one'></div>
             <div className='button-design-for-pricing-two'></div>
           </div>

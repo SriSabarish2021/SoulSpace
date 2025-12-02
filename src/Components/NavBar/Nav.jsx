@@ -7,8 +7,10 @@ import { FaWhatsapp } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { FaLinkedinIn } from "react-icons/fa";
 
-const Nav = () => {
+const Nav = ({hreffunc,hrefhomefunc}) => {
+  
   return (
     <div className="nav-bar-for-website">
       <div className='nav-container-for-search'>
@@ -18,22 +20,22 @@ const Nav = () => {
 
           </div>
           <div className="search-icon-holder-nav">
-            <FaSearch className='search-icon-nav'/>
+            <FaSearch onClick={()=>hreffunc("Programs")} className='search-icon-nav'/>
           </div>
         </div>
         <div className="social-link-nav">
-          <div className="social-icons-nav">
+          <a style={{textDecoration:'none'}} href='https://www.facebook.com/share/1JK8bPAbW8/' target='_blank' className="social-icons-nav">
             <FaFacebook className='social-icon-nav'/>
-          </div>
-          <div className="social-icons-nav">
+          </a>
+          <a style={{textDecoration:'none'}} href='https://www.instagram.com/im_dinesh_06?igsh=MW5yMWJwY3lzcTRtNw==' target='_blank' className="social-icons-nav">
             <FaInstagram className='social-icon-nav'/>
-          </div>
-          <div className="social-icons-nav">
+          </a>
+          <a style={{textDecoration:'none'}} href='https://www.facebook.com/share/1JK8bPAbW8/' target='_blank' className="social-icons-nav">
             <FaTwitter className='social-icon-nav'/>
-          </div>
-          <div className="social-icons-nav">
-            <FaWhatsapp className='social-icon-nav'/>
-          </div>
+          </a>
+          <a style={{textDecoration:'none'}} href='https://www.linkedin.com/in/dinesh-kumar-n-a0017a327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' className="social-icons-nav">
+            <FaLinkedinIn className='social-icon-nav'/>
+          </a>
         </div>
       </div>
       <div className="nav-container-for-main-navbar">
@@ -42,10 +44,10 @@ const Nav = () => {
           <p className='site-logo-name'>SOULspace</p>
         </div>
         <div className="nav-sections">
-           <a href='#' className='nav-link-para'>Home</a>
-            <a href='#' className='nav-link-para'>About us</a>
-             <a href='#' className='nav-link-para'>Programs <FaAngleRight className='arrow-change-icon'/></a>
-              <a href='#' className='nav-link-para'>Contact</a>
+           <p onClick={()=>hrefhomefunc()} className='nav-link-para'>Home</p>
+            <p  onClick={()=>hreffunc("About")} className='nav-link-para'>About us</p>
+             <p  onClick={()=>hreffunc("Programs")}  className='nav-link-para'>Programs <FaAngleRight className='arrow-change-icon'/></p>
+              <p onClick={()=>hreffunc("Contact")} className='nav-link-para'>Contact</p>
         </div>
         <div className='mobile-burger-menu'>
           <RxHamburgerMenu/>
