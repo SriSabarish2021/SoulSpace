@@ -152,7 +152,7 @@ const Qualification = ({hreffunc}) => {
               </div>
               <div className='analysis-tag-content-one'>
                 <p  className='analysis-num'>70%</p>
-                <p className='analysis-cont'>{window.innerWidth<370?'70% of our  educators have 5+ years.':window.innerWidth<730?String('70% of our educators have 5+ years of experience in Teaching.').slice(0,60)+'..':window.innerWidth<850?'70% of our  educators have 5+ years.':'70% of our  educators have 5+ years of experience, enriching classrooms.'}</p>
+                <p className='analysis-cont'>{window.innerWidth<370?'70% of our  Psychiatrist have 5+ years.':window.innerWidth<730?String('70% of our Psychiatrist have 5+ years of experience in Guiding.').slice(0,60)+'..':window.innerWidth<850?'70% of our  Psychiatrist have 5+ years.':'70% of our  Psychiatrist have 5+ years of experience, enriching Life.'}</p>
               </div>
             </div>
             <div className='number-analysis-two'>
@@ -161,7 +161,7 @@ const Qualification = ({hreffunc}) => {
               </div>
               <div className='analysis-tag-content-two'>
                 <p className='analysis-num'>9/10</p>
-                <p className='analysis-cont'>{window.innerWidth<370?'9 in 10 teachers exceed in benchmarks.':window.innerWidth<730?String('9 out of 10 teachers exceed benchmarks, showing dedication.').slice(0,60)+'..':window.innerWidth<850?'9 in 10 teachers exceed benchmarks.':'9 out of 10 teachers exceed benchmarks, showing dedication.'}</p>
+                <p className='analysis-cont'>{window.innerWidth<370?'9 in 10 Psychiatrist exceed in benchmarks.':window.innerWidth<730?String('9 out of 10 Psychiatrist exceed benchmarks, showing dedication.').slice(0,60)+'..':window.innerWidth<850?'9 in 10 Psychiatrist exceed benchmarks.':'9 out of 10 Psychiatrist exceed benchmarks, showing dedication.'}</p>
               </div>
             </div>
           </div>
@@ -172,7 +172,7 @@ const Qualification = ({hreffunc}) => {
               </div>
               <div className='analysis-tag-content-three'>
                 <p className='analysis-num'>95%</p>
-                <p className='analysis-cont'>{window.innerWidth<370?'Our expert faculty offer great guidance.':window.innerWidth<730?String('Our faculty hold advanced degrees and provide excellent guidance.').slice(0,60)+'..':window.innerWidth<850?'Our expert faculty offer top-notch guidance.':'Our faculty hold advanced degrees and provide excellent guidance.'}
+                <p className='analysis-cont'>{window.innerWidth<370?'Our expert Psychiatrist offer great guidance.':window.innerWidth<730?String('Our Psychiatrist hold advanced degrees and provide excellent guidance.').slice(0,60)+'..':window.innerWidth<850?'Our expert faculty offer top-notch guidance.':'Our Psychiatrist hold advanced degrees and provide excellent guidance.'}
 </p>
               </div>
             </div>
@@ -182,7 +182,7 @@ const Qualification = ({hreffunc}) => {
               </div>
               <div className='analysis-tag-content-four'>
                 <p className='analysis-num'>10+</p>
-                <p className='analysis-cont'>{window.innerWidth<370?'10 staff specialize in personalized academic':window.innerWidth<730?String('10 staff excel in personalized academic and career guidance.').slice(0,60)+'..':window.innerWidth<850?'10 staff specialize in personalized academic':'10 staff excel in personalized academic and career guidance.'}</p>
+                <p className='analysis-cont'>{window.innerWidth<370?'10 Psychiatrist specialize in personalized Field':window.innerWidth<730?String('10 staff excel in personalized academic and career guidance.').slice(0,60)+'..':window.innerWidth<850?'10 Psychiatrist specialize in personalized academic':'10 Psychiatrist excel in personalized academic and career guidance.'}</p>
               </div>
               
               

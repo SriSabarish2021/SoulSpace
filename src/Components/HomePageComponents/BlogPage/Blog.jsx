@@ -51,8 +51,8 @@ const Blog = () => {
                <p>March 20 2023</p>
             </div>
             <div className='blog-news-main-content'>
-              <p className='blog-main-cont-para-one'>{`How to Choose the Right Tutoring Match`.slice(0,40)}</p>
-              <p className='blog-main-cont-para-two'>{`Learn about Mindspire's personalized tutor-matching process designed to pair students with the best coaches for their unique needs. `.slice(0,80)+'...'}</p>
+              <p className='blog-main-cont-para-one'>{`How to Choose the Right Mentor`.slice(0,40)}</p>
+              <p className='blog-main-cont-para-two'>{`Learn about SoulSpace's personalized tutor-matching process designed to pair People with the best coaches for their unique needs. `.slice(0,80)+'...'}</p>
             </div>
            
           </div>
@@ -70,7 +70,7 @@ const Blog = () => {
                <p>March 20 2023</p>
             </div>
             <div className='blog-news-main-content'>
-              <p className='blog-main-cont-para-one'>{`What Students Should Know for 2025+`.slice(0,40)}</p>
+              <p className='blog-main-cont-para-one'>{`What Students Should Need for`.slice(0,40)}</p>
               <p className='blog-main-cont-para-two'>{`Explore the evolving landscape of college admissions, including policy changes, technological advancements, and the growing emphasis on student well-being.`.slice(0,80)+'...'}</p>
             </div>
            

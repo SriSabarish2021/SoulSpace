@@ -33,12 +33,13 @@ const HomeMain = ({hreffunc,hrefhomefunc}) => {
             <div className="title-content-holder">
                 <div className="title-top-line"></div>
                 <div className="title-para">
-                    <p className='title-para-cont-home'>Your Digital Space to <br />Heal and Connect with<br /><BlurText text="Professional"
+                    <p className='title-para-cont-home'>Your Space to <br />Heal and Connect with<br /></p>
+                    <BlurText text="Professional"
                         delay={100}
                         animateBy="words"
                         direction="top"
                         className="text-2xl mb-8 span-in-home-title"
-                        /></p>
+                    />
                 </div>
                 <p className='title-sub-para'>Digital platform that aims to bring back the power of talking, sharing, and healing. It is a space where people can connect with professional psychiatrists, counselors, and therapists in a safe, non-judgmental environment.</p>
                 <div className="home-page-main-btn-container">

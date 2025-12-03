@@ -402,6 +402,52 @@
 }
 
 
+
+   
+
+  .response-inner-box{
+    height: auto;
+    width: auto;
+    padding: 20px 30px;
+    position: fixed;left: 20px;
+   bottom: 20px;
+    background-color: rgb(238, 251, 255);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 20;
+    box-shadow: #11111a1a 0 10px 20px;
+    
+    overflow: hidden;
+   
+
+    .response-tick-symbol{
+      font-size: 55px;
+      color: green;
+      
+    }
+    .response-side-mess{
+      font-family:'Onest';
+      font-size: 15px;
+      font-weight: 600;
+      color: rgb(47, 47, 47);
+    }
+   
+  }
+ .show-mess{
+    transform: translateX(0px);
+    opacity: 1;
+    transition-duration: 0.3s;
+ }
+ .not-show-mess{
+    transform: translateX(-400px);
+    opacity: 0;
+    transition-duration: 0.3s;
+ }
+
 @media screen and (max-width: 1300px) {
    .review-written-container .review-written-input-container {
     width: 65%;
@@ -453,6 +499,25 @@
   }
    .review-written-container .review-written-input-container {
     width: 75%;
+  }
+
+   .response-inner-box{
+
+    padding: 15px 25px;
+
+
+
+   
+
+    .response-tick-symbol{
+      font-size: 45px;
+      
+    }
+    .response-side-mess{
+      font-size: 13px;
+
+    }
+   
   }
    
 }
@@ -547,6 +612,26 @@
     width: 25%;
     max-width: 25%;
     border-radius: 8px;
+  }
+
+   .response-inner-box{
+
+    padding: 12px 10px;
+    width:180px;
+
+
+   
+
+    .response-tick-symbol{
+      font-size: 25px;
+      
+    }
+    .response-side-mess{
+      font-size: 12px;
+      text-align: center;
+
+    }
+   
   }
 }
 @media screen and (max-width: 520px) {

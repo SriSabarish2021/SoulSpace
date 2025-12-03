@@ -27,7 +27,7 @@ const SideBy = ({onedisp,twodisp,hreffunc}) => {
                         <p  className='side-by-p-one'>Anytime Access to Our</p>
                         <p  className='side-by-p-two'>Recorded Session's</p>
                     </div>
-                    <p className='side-by-sub-para'>All our sessions are recorded and available 24/7, so students can revisit lessons anytime at their own pace.</p>
+                    <p className='side-by-sub-para'>All our sessions are recorded and available 24/7, so students can join anytime at their own pace.</p>
                     <div onClick={()=>hreffunc("Contact")} style={{textDecoration:'none'}} className='btn-side-by'>Get Access <FaArrowRight  className='arrow-btn-side-by'/>
                           <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 
@@ -54,11 +54,11 @@ const SideBy = ({onedisp,twodisp,hreffunc}) => {
                     <div className='side-by-one-main-para'>
                         <p className='side-by-p-one'>Expert Instructor's </p>
                         <div className='live-class-showing'>
-                        <p  className='side-by-p-two live-class-para'><span className='live-class-indicator'><GoDotFill className='live-dot'/>Live</span> Classes Here!</p>
+                        <p  className='side-by-p-two live-class-para'><span className='live-class-indicator'><GoDotFill className='live-dot'/>Live</span> Session Here!</p>
                         </div>
                         
                     </div>
-                    <p className='side-by-sub-para'>Join live sessions led by skilled educators—learn, ask,and interact directly with top educators, and grow in real time.</p>
+                    <p className='side-by-sub-para'>Join live sessions led by skilled educators—learn, ask,and interact directly with top Tutor, and grow in real time.</p>
                     <div onClick={()=>hreffunc("Contact")} style={{textDecoration:'none'}} className='btn-side-by'>Learn More <FaArrowRight className='arrow-btn-side-by'/>
                        <div className='btn-design-in-side-by-one'></div>
                         <div className='btn-design-in-side-by-two'></div> 

@@ -8,6 +8,8 @@ import HomepageAll from './Components/WebsiteComponents/HomepageAll'
 import { useState } from 'react';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { IoCheckmarkDoneCircle } from "react-icons/io5";
+import { useEffect } from 'react';
 
 function App() {
 
@@ -17,8 +19,8 @@ function App() {
       MainTitle:"Personalized Counseling",
       MainPara:"Users can book one-on-one counseling sessions with verified psychiatrists and therapists based on their emotional needs",
       imgurl:"",
-      SubTitle:"dfdf",
-      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      SubTitle:"Counseling",
+      SubPara:"Users can book one-on-one counseling sessions with verified psychiatrists and therapists based on their emotional needs",
       Level:"Beginner",
       TotalTime:'5',
       TotalLession:'4'
@@ -27,8 +29,8 @@ function App() {
       MainTitle:"Age-Specific Therapy",
       MainPara:"SOUL SPACE caters to all age groups — children, teenagers, adults, and elderly individuals.",
       imgurl:"",
-      SubTitle:"dfdf",
-      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      SubTitle:"Therapy",
+      SubPara:"SOUL SPACE caters to all age groups — children, teenagers, adults, and elderly individuals.",
       Level:"Beginner",
       TotalTime:'5',
       TotalLession:'4'
@@ -37,8 +39,8 @@ function App() {
       MainTitle:"24/7 Emotional Support",
       MainPara:"Users can connect with an available counselor at any time through the ―Talk Now‖",
       imgurl:"",
-      SubTitle:"dfdf",
-      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      SubTitle:"24/7 Support",
+      SubPara:"Users can connect with an available counselor at any time through the ―Talk Now feature. This round-the-clock availability ensures that no one feels alone during their tough times.",
       Level:"Beginner",
       TotalTime:'5',
       TotalLession:'4'
@@ -47,8 +49,8 @@ function App() {
       MainTitle:"Mood Tracker",
       MainPara:"It allows them to note feelings and thoughts — which can later be shared with their therapist for better analysis and progress tracking.",
       imgurl:"",
-      SubTitle:"dfdf",
-      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      SubTitle:"Mood Tracker",
+      SubPara:"It allows them to note feelings, events, and thoughts — which can later be shared with their therapist for better analysis and progress tracking.",
       Level:"Beginner",
       TotalTime:'5',
       TotalLession:'4'
@@ -57,8 +59,8 @@ function App() {
       MainTitle:"Meditation Tools",
       MainPara:"SOUL SPACE offers guided meditations, breathing exercises, relaxation music, and mindfulness sessions to help users calm your minds.",
       imgurl:"",
-      SubTitle:"dfdf",
-      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      SubTitle:"Meditation",
+      SubPara:"SOUL SPACE offers guided meditations, breathing exercises, relaxation music, and mindfulness sessions to help users calm their minds, improve focus, and enhance positivity.",
       Level:"Beginner",
       TotalTime:'5',
       TotalLession:'4'
@@ -150,16 +152,39 @@ const clickreviewcloser=(id)=>{
           },
         );
     };
-  
+    const [successmess,setsuccessmess]=useState(false)
+    let successsubmit=()=>{
+
+      setreviewwrite(false)
+      setsuccessmess(true)
+        
+      }
+      
+  useEffect(() => {
+      
+      
+       let timer= setTimeout(() => {
+        if (successmess) {
+          setsuccessmess(false)
+        }
+        }, 4000);
+      
+    
+      return () => {
+        clearTimeout(timer)
+      }
+    }, [successmess])
+
+
   return (
     <div className='website-main-container'>
       <Nav hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
       <Routes>
         <Route path='/'>
-          <Route index element={<HomepageAll data={data} openwritereview={openwritereview} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>}/>
+          <Route index element={<HomepageAll successsubmit={successsubmit} data={data} openwritereview={openwritereview} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>}/>
         </Route>
       </Routes>
-      <Footer/> 
+      <Footer hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/> 
        <div id='close-review-write'  className={`review-written-container ${reviewwrite?'move':'remove'}`}>
             <div id='not-close-review-write' onClick={(e)=>clickreviewcloser(e.target.id)}  className='review-written-input-container'>
               <form ref={form} onSubmit={sendEmailforpay} className="review-input-main-container">
@@ -193,7 +218,7 @@ const clickreviewcloser=(id)=>{
                   <p className='comment-writing-email'>How we use your data: We’ll only contact you about the review you left, and only if necessary. By submitting your review, you agree to Soul Space’s <span className='comment-condition'>terms</span>, <span className='comment-condition'>privacy</span> and <span className='comment-condition'>content</span> policies.</p>
                 </div>
                 <div className='review-btn-container'>
-                  <button className='review-btn-submit review-btn' type="submit" value="Send">Submit</button>
+                  <button className='review-btn-submit review-btn' type="submit" value="Send" onClick={()=>successsubmit()}>Submit</button>
                   <button className='review-btn-cancel review-btn' onClick={()=>cancelreview()}>Cancel</button>
                 </div>
                         <button  className='review-input-close-btn' onClick={()=>cancelreview()}><VscEyeClosed/></button>
@@ -201,6 +226,13 @@ const clickreviewcloser=(id)=>{
               </form>
             </div>
       </div>
+   
+        <div className={`response-inner-box ${successmess?'show-mess':'not-show-mess'}`}>
+          <IoCheckmarkDoneCircle className='response-tick-symbol'/>
+          <p className='response-side-mess'>Response Submitted Successfullly</p>
+         
+        </div>
+   
       
     </div>
   )

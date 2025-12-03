@@ -106,7 +106,7 @@ const Programs = ({hreffunc,data,openwritereview}) => {
             <p className='booking-card-para-one'>We are Open</p>
             <div className="location-detail-in-card">
               <MdOutlineLocationOn/>
-              <p className='location-detail-in-card'>8895 North Military Trail. <span>Florida 33410</span></p>
+              <p className='location-detail-in-card'>33,Kovilpalayam<span>Coimbatore 641107</span></p>
             </div>
           </div>
           <div className="booking-days">

@@ -62,14 +62,17 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
                     font-family: 'Exo 2';
                     font-weight: 800;
                     color: Basic-needs.$main-txt-clr;
-                    .span-in-home-title{
+                    
+                }
+                .span-in-home-title{
                         font-family:'Permanent Marker';
                         background: #54ffe0;
                         background: linear-gradient(209deg, rgba(84, 255, 224, 1) 0%, rgba(255, 138, 220, 1) 100%);
                         background-clip: text;
                         color: rgba(255, 138, 220, 1);
+                         font-size: 50px;
+                         font-weight: 800;
                     }
-                }
             }
             .title-sub-para{
                 font-size: 16px;
@@ -293,7 +296,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
 .Home-Page-Main{
     padding: 0px 50px;
    }
-  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
     font-size: 40px;
   }
   .Home-Page-Main .homepage-cont-side .title-content-holder .title-top-line{
@@ -395,7 +398,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
    .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para{
     font-size: 13px;
    }
-   .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+   .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
     font-size: 38px;
    }
    .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn{
@@ -416,7 +419,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
     .Home-Page-Main .homepage-image-side{
         display: none;
     }
-    .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+    .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
         font-size: 45px;
     }
     .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para{
@@ -465,7 +468,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
     padding: 0px 20px;
     
    }
-   .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+   .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
     font-size: 41px;
    }
    .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para{
@@ -485,7 +488,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
  
 
 @media screen and  (max-width:460px) {
-.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+.Home-Page-Main .homepage-cont-side .title-content-holder .title-para ,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
     font-size: 38px;
     }
     .Home-Page-Main .homepage-cont-side .title-content-holder{
@@ -500,7 +503,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
 }
 
 @media screen and  (max-width:400px) {
-.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
     font-size: 37px;
     }
     .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para{
@@ -522,7 +525,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
     .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para{
         width: 95%;
     }
-    .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+    .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
         font-size: 36px;
     }.Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one{
         font-size: 36px;
@@ -561,7 +564,7 @@ background: linear-gradient(209deg, rgba(84, 255, 172, 1) 0%, rgba(138, 183, 255
         height: 8px;
         width: 75px;
     }
-    .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home{
+    .Home-Page-Main .homepage-cont-side .title-content-holder .title-para ,.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title{
         font-size: 60px;
     }
     .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para{

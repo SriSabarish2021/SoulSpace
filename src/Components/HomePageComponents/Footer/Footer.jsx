@@ -7,7 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaRegCopyright } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
-const Footer = () => {
+const Footer = ({hreffunc,hrefhomefunc}) => {
   return (
     <div className='Footer-main-container'>
       <div className="inner-bar-footer">
@@ -19,7 +19,7 @@ const Footer = () => {
               </div>
               <p className='footer-tit'>Soul Space</p>
             </div>
-            <p className='description-footer'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, reprehenderit.</p>
+            <p className='description-footer'>Digital platform that aims to bring back the power of talking, sharing, and healing.</p>
           </div>
           <div className='subscribtion-footer'>
             <p className='join-us-footer-txt'>Join Us</p>
@@ -33,32 +33,32 @@ const Footer = () => {
           <div className='footer-program-nav'>
             <p className='foot-nav-tit'>Programms</p>
             <div className='list-footer-nav'>
-              <p className='footer-nav-item'>Home</p>
-              <p className='footer-nav-item'>About Us</p>
-              <p className='footer-nav-item'>Programs</p>
-              <p className='footer-nav-item'>Contact</p>
+              <p className='footer-nav-item'>Workshops</p>
+              <p className='footer-nav-item'>Mental Health</p>
+              <p className='footer-nav-item'>Wellness</p>
+              <p className='footer-nav-item'>Direct chat</p>
             </div>
           </div>
           <div className='footer-quicklink-nav'>
             <p className='foot-nav-tit'>Quick Links</p>
             <div className='list-footer-nav'>
-              <p  className='footer-nav-item'>Home</p>
-              <p  className='footer-nav-item'>About Us</p>
-              <p  className='footer-nav-item'>Programs</p>
-              <p  className='footer-nav-item'>Contact</p>
+              <p onClick={()=>hrefhomefunc()} className='footer-nav-item'>Home</p>
+              <p onClick={()=>hreffunc("About")} className='footer-nav-item'>About Us</p>
+              <p onClick={()=>hreffunc("Programs")} className='footer-nav-item'>Programs</p>
+              <p onClick={()=>hreffunc("Contact")} className='footer-nav-item'>Contact</p>
             </div>
           </div>
           <div className='footer-all-nav'>
-            <p className='foot-nav-tit'>Quick Links</p>
+            <p className='foot-nav-tit'>Help Side</p>
             <div className='list-footer-nav'>
-              <p className='footer-nav-item'>Home</p>
-              <p className='footer-nav-item'>About Us</p>
-              <p className='footer-nav-item'>Programs</p>
-              <p className='footer-nav-item'>Contact</p>
+              <p className='footer-nav-item'>24/7</p>
+              <p className='footer-nav-item'>Direct Call</p>
+              <p className='footer-nav-item'>QuickResponse</p>
+              <p className='footer-nav-item'>No Timer</p>
             </div>
           </div>
           <div className='footer-contact-nav'>
-            <p className='foot-nav-tit'>Quick Links</p>
+            <p className='foot-nav-tit'>Reach-us</p>
             <div className='list-footer-nav'>
               <p className='contact-footer'>Address: <span className='value-in-foot-contact'>77,Rayapalayam Erode</span></p>
               <p className='contact-footer'>Phone: <span className='value-in-foot-contact'>23902=322332</span></p>

@@ -2,7 +2,7 @@ import '../../../Sass/HomePageSASS/GetinTouch/GetinTouch.scss';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
-const GetinTouch = () => {
+const GetinTouch = ({successsubmit}) => {
    const form = useRef();
 
   const sendEmail = (e) => {
@@ -90,7 +90,7 @@ const GetinTouch = () => {
         </div>
         <p className='para-policy-in-form'>
 Suspendisse potenti. Donec tristique dolor id sapien porttitor, rhoncus malesuada turpis ullamcorper. Sit amet mattis vulputate enim nulla aliquet</p>
-        <button className='Form-submit-btn' type="submit" value="Send" >
+        <button className='Form-submit-btn' type="submit" value="Send" onClick={()=>successsubmit()} >
             Submit
             <div className='for-submit-btn-design'></div>
         </button>

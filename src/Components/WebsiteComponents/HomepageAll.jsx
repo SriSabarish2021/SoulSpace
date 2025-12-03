@@ -9,7 +9,7 @@ import Qualification from '../HomePageComponents/Qualification/Qualification';
 import SideBy from '../HomePageComponents/SideBy/SideBy.jsx';
 import Subcription from '../HomePageComponents/Subscription/Subcription.jsx';
 
-const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview,data}) => {
+const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview,data,successsubmit}) => {
   
 
   return (
@@ -22,9 +22,9 @@ const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview,data}) => {
       <Qualification hreffunc={hreffunc}/>
       <Subcription openwritereview={openwritereview}/>
       <SideBy hreffunc={hreffunc}/> 
-      <GetinTouch/>
+      <GetinTouch successsubmit={successsubmit}/>
       <Blog/>
-     
+
     </>
   )
 }
