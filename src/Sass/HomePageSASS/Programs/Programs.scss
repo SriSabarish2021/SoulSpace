@@ -1,7 +1,7 @@
-@use '/Psycha/src/Sass/Column-center';
-@use '/Psycha/src/Sass/Row-center';
-@use '/Psycha/src/Sass/Basic-needs';
-@use '/Psycha/src/Sass/main-color';
+@use '../../Column-center';
+@use '../../Row-center';
+@use '../../Basic-needs';
+@use '../../main-color';
 @import url('https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
@@ -1224,7 +1224,12 @@
         height: 70px;
         width: 70px;
     }
-    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design,{
+   
+    .Programs-offered-main-container .Programs-offered-main-cards .program-cards-design{
         padding: 30px 15px;
     }
+    .Programs-offered-main-container{
+        padding: 50px 20px;
+    }
+  
 }

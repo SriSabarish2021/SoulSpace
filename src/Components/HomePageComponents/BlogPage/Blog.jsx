@@ -1,7 +1,6 @@
 import '../../../Sass/HomePageSASS/BlogPage/Blog.scss';
 import { useRef } from 'react';
 
-import { FaCircleArrowRight } from "react-icons/fa6";
 
 const Blog = () => {
 

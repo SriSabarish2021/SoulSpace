@@ -1,6 +1,6 @@
-@use '/Psycha/src/Sass/main-color';
-@use '/Psycha/src/Sass/Column-center';
-@use '/Psycha/src/Sass/Row-center';
+@use '../../main-color';
+@use '../../Column-center';
+@use '../../Row-center';
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
@@ -682,6 +682,9 @@
         height: 33px;
         width: 130px;
         font-size: 11px;
+    }
+     .side-by-elements-container{
+        margin-bottom: 0px;
     }
 }
 

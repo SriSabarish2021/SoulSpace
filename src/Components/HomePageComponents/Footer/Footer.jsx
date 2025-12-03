@@ -1,5 +1,4 @@
-import '../../../Sass/HomePageSASS/Footer/Footer.scss';
-import { FaWhatsapp } from "react-icons/fa";
+import '../../../Sass/Footer/Footer.scss';
 import { FaFacebook } from "react-icons/fa";
 
 import { FaInstagram } from "react-icons/fa";

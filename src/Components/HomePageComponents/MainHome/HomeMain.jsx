@@ -1,9 +1,8 @@
-import { useRef,useEffect } from 'react';
 import '../../../Sass/HomePageSASS/MainHomeSASS/HomeMain.scss';
 import CountUp from '../../CountAni';
 import BlurText from '../../HomeTxt';
 
-const HomeMain = ({hreffunc,hrefhomefunc}) => {
+const HomeMain = ({hreffunc}) => {
    /*  let imageref=useRef(null)
    let imageslider = () => {
     let img_arr = ["/heart-2.png", "/heart.png"];
