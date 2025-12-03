@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import Footer from "./Components/HomePageComponents/Footer/Footer";
 import { VscEyeClosed } from "react-icons/vsc";
 
-import './App.scss'
+import './App.css'
 import HomepageAll from './Components/WebsiteComponents/HomepageAll'
 import { useState } from 'react';
 import { useRef } from 'react';

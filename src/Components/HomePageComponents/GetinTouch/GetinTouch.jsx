@@ -1,4 +1,4 @@
-import '../../../Sass/HomePageSASS/GetinTouch/GetinTouch.scss';
+import '../../../CSS/HomePageSASS/GetinTouch/GetinTouch.css';
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 

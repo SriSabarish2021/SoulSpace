@@ -1,4 +1,4 @@
-import '../../../Sass/HomePageSASS/Qualification/Qualification.scss';
+import '../../../CSS/HomePageSASS/Qualification/Qualification.css';
 
 import { useRef } from 'react'
 import { Video } from '@imagekit/react';

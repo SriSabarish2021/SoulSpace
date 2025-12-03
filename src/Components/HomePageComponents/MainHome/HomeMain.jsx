@@ -1,4 +1,4 @@
-import '../../../Sass/HomePageSASS/MainHomeSASS/HomeMain.scss';
+import '../../../CSS/HomePageSASS/MainHomeSASS/HomeMain.css';
 import CountUp from '../../CountAni';
 import BlurText from '../../HomeTxt';
 

@@ -1,4 +1,4 @@
-import '../../../Sass/HomePageSASS/SideBy/SideBy.scss';
+import '../../../CSS/HomePageSASS/SideBy/SideBy.css';
 
 import { Video } from '@imagekit/react'; 
 import { GoDotFill } from "react-icons/go";

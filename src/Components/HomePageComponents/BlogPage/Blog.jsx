@@ -1,4 +1,4 @@
-import '../../../Sass/HomePageSASS/BlogPage/Blog.scss';
+import '../../../CSS/HomePageSASS/BlogPage/Blog.css';
 import { useRef } from 'react';
 
 

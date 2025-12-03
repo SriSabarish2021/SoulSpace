@@ -1,0 +1,556 @@
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.Home-Page-Main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 100px 0px 100px;
+}
+.Home-Page-Main .mobile-view-bg {
+  display: none;
+}
+.Home-Page-Main .homepage-cont-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 15px;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .title-top-line {
+  height: 5px;
+  width: 60px;
+  background: #54ffac;
+  background: linear-gradient(209deg, rgb(84, 255, 172) 0%, rgb(138, 183, 255) 100%);
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .title-para {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home {
+  font-size: 50px;
+  font-family: "Exo 2";
+  font-weight: 800;
+  color: #293039;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+  font-family: "Permanent Marker";
+  background: #54ffe0;
+  background: linear-gradient(209deg, rgb(84, 255, 224) 0%, rgb(255, 138, 220) 100%);
+  background-clip: text;
+  color: rgb(255, 138, 220);
+  font-size: 50px;
+  font-weight: 800;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+  font-size: 16px;
+  font-family: "Georama";
+  font-weight: 500;
+  color: #51565D;
+  letter-spacing: 1px;
+  line-height: 30px;
+  width: 80%;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  padding-top: 30px;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn {
+  height: 45px;
+  width: 190px;
+  border-radius: 50px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: "Playwrite DE Grund";
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn-one {
+  background-color: #26ABA3;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn-one .btn-design-one {
+  position: absolute;
+  height: 100%;
+  width: 0px;
+  background-color: #F7AB1E;
+  left: 0px;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  z-index: -1;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn-one:hover .btn-design-one {
+  transition-duration: 0.4s;
+  width: 100%;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn-two {
+  background-color: transparent;
+  border: 2px solid #26ABA3;
+  color: #26ABA3;
+  z-index: 1;
+  transition-duration: 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn-two .btn-design-two {
+  position: absolute;
+  height: 100%;
+  width: 0px;
+  background-color: #F7AB1E;
+  left: 0px;
+  border-radius: 50px;
+  transition-duration: 0.4s;
+  z-index: -1;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn-two:hover {
+  transition-duration: 0.4s;
+  border: 2px solid #F7AB1E;
+  color: white;
+}
+.Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn-two:hover .btn-design-two {
+  transition-duration: 0.4s;
+  width: 100%;
+}
+.Home-Page-Main .homepage-cont-side .home-page-analysis-bar {
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 6px;
+}
+.Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+  font-size: 45px;
+  font-weight: 900;
+  color: #F7AB1E;
+  font-family: "Nunito";
+}
+.Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-line {
+  height: 2px;
+  width: 60px;
+  border-radius: 50px;
+  background-color: #a4fff9;
+}
+.Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-two {
+  font-size: 14px;
+  font-family: "Inter";
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 21px;
+  color: #51565D;
+}
+.Home-Page-Main .homepage-image-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Home-Page-Main .homepage-image-side .image-container-in-home-main {
+  height: 75%;
+  width: 75%;
+  position: relative;
+}
+.Home-Page-Main .homepage-image-side .image-container-in-home-main .img-in-main-home-page {
+  height: 100%;
+  width: 100%;
+  border-radius: 200px 10px 200px 10px;
+}
+.Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-one {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: #a8dfc4;
+  top: -40px;
+  left: -40px;
+  border-radius: 220px 10px 220px 10px;
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-two {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: #c8e0af;
+  bottom: -40px;
+  right: -40px;
+  border-radius: 220px 10px 220px 10px;
+  z-index: -1;
+  transition-duration: 0.4s;
+}
+.Home-Page-Main .homepage-image-side .image-container-in-home-main:hover .disign-box-home-main-one {
+  background-color: #c8e0af;
+  transition-duration: 0.4s;
+}
+.Home-Page-Main .homepage-image-side .image-container-in-home-main:hover .disign-box-home-main-two {
+  background-color: #a8dfc4;
+  transition-duration: 0.4s;
+}
+
+@media screen and (max-width: 1400px) {
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main {
+    height: 80%;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .Home-Page-Main {
+    padding: 0px 80px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main {
+    height: 85%;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 1220px) {
+  .Home-Page-Main {
+    padding: 0px 60px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main {
+    height: 85%;
+    width: 85%;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .Home-Page-Main {
+    padding: 0px 50px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 40px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-top-line {
+    height: 4px;
+    margin-bottom: 0px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    width: 80%;
+    font-size: 14px;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 25px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder {
+    gap: 12px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container {
+    padding-top: 15px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn {
+    height: 40px;
+    width: 180px;
+    font-size: 13px;
+  }
+  .Home-Page-Main .homepage-cont-side {
+    gap: 30px;
+    padding-top: 60px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+    font-size: 40px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-two {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container {
+    gap: 4px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-one, .Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-two {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main {
+    height: 90%;
+    width: 90%;
+  }
+  .Home-Page-Main {
+    padding: 0px 30px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-one {
+    left: -30px;
+    top: -30px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-two {
+    right: -30px;
+    bottom: -30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main {
+    width: 100%;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar {
+    width: 90%;
+    max-width: none;
+  }
+}
+@media screen and (max-width: 810px) {
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main .img-in-main-home-page {
+    border-radius: 100px 10px 100px 10px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-one {
+    left: -30px;
+    border-radius: 100px 10px 100px 10px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main .disign-box-home-main-two {
+    right: -30px;
+    border-radius: 100px 10px 100px 10px;
+  }
+  .Home-Page-Main .homepage-image-side .image-container-in-home-main {
+    height: 100%;
+  }
+  .Home-Page-Main {
+    padding: 0px 15px;
+    overflow: hidden;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    font-size: 13px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 38px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn {
+    height: 40px;
+    width: 160px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Home-Page-Main {
+    flex-direction: column;
+  }
+  .Home-Page-Main .homepage-image-side {
+    display: none;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 45px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    font-size: 14px;
+    line-height: 27px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder {
+    gap: 15px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn {
+    height: 40px;
+    width: 180px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+    font-size: 45px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-two {
+    font-size: 13px;
+  }
+  .Home-Page-Main .homepage-cont-side {
+    padding-top: 0px;
+  }
+  .Home-Page-Main .mobile-view-bg {
+    display: flex;
+    height: 75%;
+    width: 75%;
+    opacity: 0.8;
+    z-index: -1;
+    position: absolute;
+  }
+  .Home-Page-Main {
+    padding: 0px 35px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .Home-Page-Main {
+    padding: 0px 20px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 41px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    font-weight: 400;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn {
+    height: 36px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+    font-size: 42px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-two {
+    font-size: 13px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 460px) {
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 38px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder {
+    gap: 13px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    line-height: 25px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-two {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 37px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    line-height: 24px;
+    font-size: 13px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder {
+    gap: 12px;
+  }
+  .Home-Page-Main {
+    padding: 0px 15px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    width: 95%;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .title-para-cont-home, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 36px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+    font-size: 36px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-two {
+    font-size: 11.5px;
+  }
+}
+@media screen and (max-width: 335px) {
+  .Home-Page-Main {
+    padding: 0px 10px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn {
+    font-size: 12px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container {
+    gap: 25px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+    font-size: 36px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar {
+    gap: 20px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .Home-Page-Main .homepage-image-side {
+    display: none;
+  }
+  .Home-Page-Main .homepage-cont-side {
+    padding-top: 10px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-top-line {
+    height: 8px;
+    width: 75px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-para, .Home-Page-Main .homepage-cont-side .title-content-holder .title-para .span-in-home-title {
+    font-size: 60px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .title-sub-para {
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 1px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder .home-page-main-btn-container .home-page-main-btn {
+    height: 52px;
+    width: 240px;
+    font-size: 18px;
+  }
+  .Home-Page-Main .homepage-cont-side .title-content-holder {
+    gap: 22px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-one {
+    font-size: 65px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-cont-two {
+    font-size: 17px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container .analysis-line {
+    height: 8px;
+    width: 100px;
+  }
+  .Home-Page-Main .homepage-cont-side .home-page-analysis-bar .analysis-container {
+    gap: 10px;
+  }
+}
+
+/*# sourceMappingURL=HomeMain.css.map */

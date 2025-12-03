@@ -1,0 +1,419 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=GFS+Neohellenic:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.Subscription-main-page-container {
+  height: auto;
+  width: 100%;
+  padding: 50px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  background-color: #f6fffe;
+  overflow: hidden;
+}
+.Subscription-main-page-container .Pricing-plan-title-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-one {
+  font-size: 45px;
+  font-family: "Averia Libre";
+  font-weight: 600;
+  color: #293039;
+}
+.Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-two {
+  font-size: 15px;
+  font-family: "Georama";
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: #51565D;
+}
+.Subscription-main-page-container .Pricing-plan-main-container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+  height: auto;
+  width: auto;
+  background-color: white;
+  border-radius: 20px;
+  transition-duration: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 90px;
+  box-shadow: rgba(17, 17, 26, 0.1019607843) 0 0 16px;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name {
+  font-size: 26px;
+  font-family: "DM Sans";
+  font-weight: 800;
+  color: #2a3037;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para {
+  font-size: 45px;
+  font-family: "Exo";
+  font-weight: 800;
+  color: #26ABA3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para .Amount-underline-for-plan {
+  height: 2px;
+  width: 60px;
+  border-radius: 100%;
+  background-color: #dcdcdc;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 16px;
+  font-family: "Vend Sans";
+  font-weight: 400;
+  color: #51565D;
+  letter-spacing: 0.5px;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  color: #F7AB1E;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box {
+  height: auto;
+  width: auto;
+  padding: 6px 40px;
+  border: 1px solid #26ABA3;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: "MuseoModerno";
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: #26ABA3;
+  transition-duration: 0.3s;
+  z-index: 1;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box .button-design-for-pricing-one {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  top: -50%;
+  background-color: #F7AB1E;
+  transition-duration: 0.6s;
+  z-index: -1;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box .button-design-for-pricing-two {
+  height: 0%;
+  width: 100%;
+  position: absolute;
+  bottom: -50%;
+  background-color: #F7AB1E;
+  transition-duration: 0.6s;
+  z-index: -1;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box:hover {
+  color: white;
+  border-color: #F7AB1E;
+  transition-duration: 0.3s;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box:hover .button-design-for-pricing-one {
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box:hover .button-design-for-pricing-two {
+  height: 100%;
+  transition-duration: 0.3s;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .pricing-bottom {
+  transform: translateY(0px);
+  transition-duration: 0.3s;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .pricing-top:hover {
+  transition-duration: 0.3s;
+  transform: translateY(-30px);
+  transition-delay: 0.05s;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .pricing-bottom:hover {
+  transition-duration: 0.3s;
+  transform: translateY(-30px);
+  transition-delay: 0.05s;
+}
+.Subscription-main-page-container .Pricing-plan-main-container .pricing-middle {
+  transform: translateY(-30px);
+}
+
+@media screen and (max-width: 1180px) {
+  .Subscription-main-page-container {
+    padding: 50px 20px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 50px 75px;
+  }
+}
+@media screen and (max-width: 1090px) {
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-one {
+    font-size: 40px;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div {
+    width: 60%;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-two {
+    font-size: 14px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container {
+    gap: 30px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 45px 60px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name {
+    font-size: 24px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para {
+    font-size: 40px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features {
+    font-size: 14px;
+    gap: 15px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features {
+    font-size: 16px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box {
+    padding: 5px 30px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 915px) {
+  .Subscription-main-page-container {
+    padding: 50px 0px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 40px 55px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .Subscription-main-page-container .Pricing-plan-main-container {
+    gap: 25px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name {
+    font-size: 23px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para {
+    font-size: 36px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box {
+    gap: 14px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    gap: 28px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features {
+    font-size: 13px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features {
+    font-size: 14px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 830px) {
+  .Subscription-main-page-container .Pricing-plan-main-container {
+    gap: 20px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 35px 40px;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-two {
+    font-size: 13px;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 740px) {
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 35px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .Subscription-main-page-container .Pricing-plan-main-container {
+    flex-direction: column;
+  }
+  .Subscription-main-page-container {
+    gap: 40px;
+    padding: 30px 0px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 45px 80px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .pricing-middle {
+    transition: none;
+    transform: none;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div {
+    width: 70%;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name {
+    font-size: 26px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para {
+    font-size: 40px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features {
+    font-size: 15px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features {
+    font-size: 16px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box {
+    padding: 6px 45px;
+    font-size: 16px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-one {
+    font-size: 35px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 45px 70px;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 380px) {
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features {
+    font-size: 14px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 45px 55px;
+  }
+}
+@media screen and (min-height: 990px) and (max-height: 1300px) and (max-width: 990px) {
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-one {
+    font-size: 55px;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div .para-main-pricing-two {
+    font-size: 20px;
+  }
+  .Subscription-main-page-container .Pricing-plan-title-container .pricing-plan-para-div {
+    width: 70%;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-name {
+    font-size: 40px;
+  }
+  .Subscription-main-page-container {
+    gap: 50px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para {
+    font-size: 60px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features {
+    font-size: 22px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .pricing-middle {
+    transform: none;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features .para-in-feature-pricing .Tick-icon-in-features {
+    font-size: 20px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .Princing-features {
+    gap: 30px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .button-in-pricing-box {
+    font-size: 24px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box .pricing-title-box .plan-amount-para .Amount-underline-for-plan {
+    height: 8px;
+    width: 100px;
+  }
+  .Subscription-main-page-container .Pricing-plan-main-container .Pricing-box {
+    padding: 50px 120px;
+  }
+}
+
+/*# sourceMappingURL=Subscription.css.map */

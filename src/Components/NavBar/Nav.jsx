@@ -1,4 +1,4 @@
-import '../../Sass/NavBar/Nav.scss';
+import '../../CSS/NavBar/Nav.css';
 import { FaSearch } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";

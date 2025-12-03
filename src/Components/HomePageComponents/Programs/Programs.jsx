@@ -1,4 +1,4 @@
-import '../../../Sass/HomePageSASS/Programs/Programs.scss';
+import '../../../CSS/HomePageSASS/Programs/Programs.css';
 import { ImAngry2 } from "react-icons/im";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { PiClock } from "react-icons/pi";

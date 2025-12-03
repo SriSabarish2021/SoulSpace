@@ -1,4 +1,4 @@
-import '../../../Sass/HomePageSASS/Subscription/Subscription.scss';
+import '../../../CSS/HomePageSASS/Subscription/Subscription.css';
 import { FaRegCheckCircle } from "react-icons/fa";
 
 const Subcription = ({openwritereview}) => {
