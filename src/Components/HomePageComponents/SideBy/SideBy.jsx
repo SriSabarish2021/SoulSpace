@@ -1,6 +1,6 @@
 import '../../../Sass/HomePageSASS/SideBy/SideBy.scss';
 
-/* import { Video } from '@imagekit/react'; */
+import { Video } from '@imagekit/react'; 
 import { GoDotFill } from "react-icons/go";
 import { FaArrowRight } from "react-icons/fa6";
 
@@ -13,14 +13,14 @@ const SideBy = ({onedisp,twodisp,hreffunc}) => {
             <div className='side-by-two'>
                 <div  className='side-by-two-img-tag'>
                      
-                     {/* <Video 
-                        urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                        src="/7192325-uhd_3840_2160_25fps.mp4"
+                      <Video 
+                        urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
+                        src="/49808-458438856_small.mp4"
                         autoPlay
                         muted 
                         loop
                         className='side-by-two-img'
-                    /> */}
+                    /> 
                 </div>
                 <div  className='side-by-two-cont-tag'>
                     <div className='side-by-two-main-para'>
@@ -41,14 +41,14 @@ const SideBy = ({onedisp,twodisp,hreffunc}) => {
         <div className='side-by-inner-container'>
              <div className='side-by-one'>
                 <div className='side-by-one-img-tag'>
-                    {/*  <Video 
-                        urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                    <Video 
+                        urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
                         src="/5183279-hd_1920_1080_30fps.mp4"
                          autoPlay
                         muted 
                         loop
                         className='side-by-one-img'
-                        /> */}
+                        />
                 </div>
                 <div  className='side-by-one-cont-tag'>
                     <div className='side-by-one-main-para'>
@@ -72,14 +72,14 @@ const SideBy = ({onedisp,twodisp,hreffunc}) => {
         </div>: <div className='side-by-inner-container'>
              <div className='side-by-one'>
                 <div className='side-by-one-img-tag'>
-                     {/* <Video 
-                        urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
+                     <Video 
+                        urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
                         src="/5183279-hd_1920_1080_30fps.mp4"
                          autoPlay
                         muted 
                         loop
                         className='side-by-one-img'
-                        /> */}
+                        />
                 </div>
                 <div  className='side-by-one-cont-tag'>
                     <div className='side-by-one-main-para'>
@@ -103,14 +103,14 @@ const SideBy = ({onedisp,twodisp,hreffunc}) => {
             <div className='side-by-two'>
                 <div  className='side-by-two-img-tag'>
                      
-                     {/* <Video 
-                        urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                        src="/7192325-uhd_3840_2160_25fps.mp4"
+                    <Video 
+                        urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
+                        src="/49808-458438856_small.mp4"
                         autoPlay
                         muted 
                         loop
                         className='side-by-two-img'
-                    /> */}
+                    />
                 </div>
                 <div  className='side-by-two-cont-tag'>
                     <div className='side-by-two-main-para'>

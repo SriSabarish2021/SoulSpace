@@ -41,7 +41,7 @@ const Subcription = ({openwritereview}) => {
             <p className='para-in-feature-pricing'><span className='Tick-icon-in-features'><FaRegCheckCircle/></span>Lorem ipsum dolor</p>
             
           </div>
-          <div className='button-in-pricing-box'>
+          <div className='button-in-pricing-box'  onClick={()=>openwritereview('BasicPlan')}>
             <p>Buy Now</p>
             <div className='button-design-for-pricing-one'></div>
             <div className='button-design-for-pricing-two'></div>
@@ -59,7 +59,7 @@ const Subcription = ({openwritereview}) => {
             <p className='para-in-feature-pricing'><span className='Tick-icon-in-features'><FaRegCheckCircle/></span>Lorem ipsum dolor</p>
             
           </div>
-          <div className='button-in-pricing-box'>
+          <div className='button-in-pricing-box'  onClick={()=>openwritereview('BasicPlan')}>
             <p>Buy Now</p>
             <div className='button-design-for-pricing-one'></div>
             <div className='button-design-for-pricing-two'></div>

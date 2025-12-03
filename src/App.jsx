@@ -10,6 +10,60 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 function App() {
+
+  const [data, setdata] = useState([
+    {
+      id:1,
+      MainTitle:"Personalized Counseling",
+      MainPara:"Users can book one-on-one counseling sessions with verified psychiatrists and therapists based on their emotional needs",
+      imgurl:"",
+      SubTitle:"dfdf",
+      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      Level:"Beginner",
+      TotalTime:'5',
+      TotalLession:'4'
+    },{
+      id:2,
+      MainTitle:"Age-Specific Therapy",
+      MainPara:"SOUL SPACE caters to all age groups — children, teenagers, adults, and elderly individuals.",
+      imgurl:"",
+      SubTitle:"dfdf",
+      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      Level:"Beginner",
+      TotalTime:'5',
+      TotalLession:'4'
+    },{
+      id:3,
+      MainTitle:"24/7 Emotional Support",
+      MainPara:"Users can connect with an available counselor at any time through the ―Talk Now‖",
+      imgurl:"",
+      SubTitle:"dfdf",
+      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      Level:"Beginner",
+      TotalTime:'5',
+      TotalLession:'4'
+    },{
+      id:4,
+      MainTitle:"Mood Tracker",
+      MainPara:"It allows them to note feelings and thoughts — which can later be shared with their therapist for better analysis and progress tracking.",
+      imgurl:"",
+      SubTitle:"dfdf",
+      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      Level:"Beginner",
+      TotalTime:'5',
+      TotalLession:'4'
+    },{
+      id:5,
+      MainTitle:"Meditation Tools",
+      MainPara:"SOUL SPACE offers guided meditations, breathing exercises, relaxation music, and mindfulness sessions to help users calm your minds.",
+      imgurl:"",
+      SubTitle:"dfdf",
+      SubPara:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.",
+      Level:"Beginner",
+      TotalTime:'5',
+      TotalLession:'4'
+    }
+  ])
   
   let reviewNameref=useRef('')
   let reviewDegreeref=useRef('')
@@ -102,7 +156,7 @@ const clickreviewcloser=(id)=>{
       <Nav hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
       <Routes>
         <Route path='/'>
-          <Route index element={<HomepageAll openwritereview={openwritereview} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>}/>
+          <Route index element={<HomepageAll data={data} openwritereview={openwritereview} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>}/>
         </Route>
       </Routes>
       <Footer/> 

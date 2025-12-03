@@ -1,9 +1,9 @@
 import '../../../Sass/HomePageSASS/Qualification/Qualification.scss';
 
 import { useRef } from 'react'
-// import { Video } from '@imagekit/react';
+import { Video } from '@imagekit/react';
 import { Link } from 'react-router-dom';
-
+import { Image } from '@imagekit/react';
 const Qualification = ({hreffunc}) => {
   
 
@@ -36,9 +36,13 @@ const Qualification = ({hreffunc}) => {
     <div id='About' className='staff-page-container' onMouseMove={(e)=>MouseMoveEvent(e)}>
       <div className='staff-page-image-container'>
         <div className='staff-page-image-box-one'>
-          
-            <img src="Qualification/img-qual-one.webp" alt="Staff Image "
-            className='image-box-one-image Staff-Image-Scroll'/>
+            <Image
+                    urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
+                    src="/img-qual-one.webp"      
+                    alt="Staff Image "
+            className='image-box-one-image Staff-Image-Scroll'       
+                />
+           
           <div className='image-box-one-totors'>
             <div className='tutors-img-tag'>
                <img src="Qualification/Top-staff-Four.avif" alt="Staff Image"
@@ -61,29 +65,35 @@ const Qualification = ({hreffunc}) => {
         </div>
         <div className='staff-page-image-box-two'>
           <div className='image-box-two-imageone'>
-             {/*  <Video 
-                urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                src="/Home+1+Video.mp4"
+              <Video 
+                urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
+                src="/133898-758336558_small.mp4"
                   autoPlay
                 muted 
                 loop
                 className='video-tag'
-                /> */}
+                /> 
               <div className='vid-cont-img-one'>
                 <p className='our-story'>Our Story</p>
               </div>
           </div>
-           <img src="Qualification/qual-img-two.jpg" alt="Staff Image "
+           <img src="/Qualification/download.jpg" alt="Staff Image "
              className='image-box-two-imagetwo Staff-Image-Scroll'/>
-
+    
           <div className='mobile-image-for-staff-page'>
             <div className='mobile-image-bar-two-section-one'>
-              <img src="/StaffPage/Staff-page-img.webp" alt="Staff Image "
+               <img src="/Qualification/download.jpg" alt="Staff Image "
              className='image-box-one-imagetwo-mob Staff-Image-Scroll'/>
+              
             </div>
             <div className='mobile-image-bar-two-section-two'>
-            <img src="/StaffPage/Staff-one.webp" alt="Staff Image "
-             className='image-box-two-imagetwo-mob-two Staff-Image-Scroll'/>
+              <Image
+                    urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
+                    src="/img-qual-one.webp"      
+                    alt="Staff Image "
+             className='image-box-two-imagetwo-mob-two Staff-Image-Scroll'      
+                />
+            
              <div className='image-box-one-totors-mobile'>
             <div className='tutors-img-tag'>
                <img src="/StaffPage/Top-staff-one.avif" alt="Staff Image"
@@ -109,14 +119,14 @@ const Qualification = ({hreffunc}) => {
         </div>
       </div>
       <div className='staff-page-content-container'>
-   {/*      <Video 
-                urlEndpoint="https://ik.imagekit.io/fu0jk2cou"
-                src="/Home+1+Video.mp4"
+    <Video 
+                urlEndpoint="https://ik.imagekit.io/rdxen4o6x"
+                src="/133898-758336558_small.mp4"
                   autoPlay
                 muted 
                 loop
                 className='video-tag-for-content'
-                /> */}
+                /> 
         <div className='short-title-staff-page'>
           <div className='line-img-tag'></div>
           <p className='flexible-short-tit'>FLEXIBLE SUPPORTED</p> 

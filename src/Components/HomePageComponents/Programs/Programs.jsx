@@ -5,7 +5,7 @@ import { PiClock } from "react-icons/pi";
 import { PiReadCvLogo } from "react-icons/pi";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 
-const Programs = ({hreffunc,hrefhomefunc}) => {
+const Programs = ({hreffunc,data,openwritereview}) => {
 
 
   let showdetailscard=(name)=>{
@@ -50,244 +50,56 @@ const Programs = ({hreffunc,hrefhomefunc}) => {
         </div>
       </div>
       <div className='Programs-offered-main-cards'>
-        <div className="program-cards-design card-design-1">
-          <div className='Card-image'>
-            <ImAngry2/>
-          </div>
-          <div className='Card-info'>
-            <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Personalized Counseling</p>
-              <p className='sub-tit-for-card'>Users can book one-on-one counseling sessions with verified psychiatrists and therapists based on their emotional needs</p>
+        {Array.from(data).map((indidata)=>
+          <div key={indidata.id} className={`program-cards-design card-design-${indidata.id}`}>
+            <div className='Card-image'>
+              <ImAngry2/>
             </div>
-            <div className='card-view-more'>
-              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-1'}`)}>
-                 <div className='card-view-btn-design'></div>
-                  <p>View More</p>
+            <div className='Card-info'>
+              <div className='card-info-txt'>
+                <p className='main-tit-for-card'>{indidata.MainTitle}</p>
+                <p className='sub-tit-for-card'>{indidata.MainPara}</p>
+              </div>
+              <div className='card-view-more'>
+                <div className='card-view-btn' onClick={()=>showdetailscard(`card-design-${indidata.id}`)}>
+                  <div className='card-view-btn-design'></div>
+                    <p>View More</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className='card-view-more-container'>
-              <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
-                <div className='hovering-content-container'>
-                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
-                  <p className='hover-title'>dfdf</p>
-                
-                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
-                  <div className='prog-info-hovering'>
-                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
-                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
-                  </div>
-                </div>
-                <div className='hovering-btn-container'>
-                  <div className='hover-enroll-btn'>
-                    
-                      <div className='hover-enroll-btn-insider'>
-                        Enroll Now
-                        <div className='prog-enroll-design-one'></div>
-                        <div className='prog-enroll-design-two'></div>
-                      </div>
-                  
-                  </div>
-                  
-                  
-                  
-                  
-                </div>
-            
-          </div>
-          
-        </div>
-        <div className="program-cards-design card-design-2">
-          <div className='Card-image'>
-            <ImAngry2/>
-          </div>
-          <div className='Card-info'>
-            <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Age-Specific Therapy</p>
-              <p className='sub-tit-for-card'>SOUL SPACE caters to all age groups — children, teenagers, adults, and elderly individuals.</p>
-            </div>
-            <div className='card-view-more'>
-              <div className='card-view-btn'  onClick={()=>showdetailscard(`${'card-design-2'}`)}>
-                 <div className='card-view-btn-design'></div>
-                  <p>View More</p>
-              </div>
-            </div>
-          </div>
             <div className='card-view-more-container'>
                 <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
-                <div className='hovering-content-container'>
-                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
-                  <p className='hover-title'>dfdf</p>
-                
-                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
-                  <div className='prog-info-hovering'>
-                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
-                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
+                  <div className='hovering-content-container'>
+                    <div className='difficulty-level-hover-bar'><p>{indidata.Level}</p></div>
+                    <p className='hover-title'>{indidata.SubTitle}</p>
+                  
+                  <p className="hover-sub-title">{indidata.SubPara}</p>
+                    <div className='prog-info-hovering'>
+                      <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>{indidata.TotalTime} Hours</p>
+                      <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>{indidata.TotalLession} Lesson</p>
+                    </div>
                   </div>
-                </div>
-                <div className='hovering-btn-container'>
-                  <div className='hover-enroll-btn'>
+                  <div className='hovering-btn-container'>
+                    <div  onClick={()=>openwritereview(indidata.MainTitle)} className='hover-enroll-btn'>
+                      
+                        <div className='hover-enroll-btn-insider'>
+                          Enroll Now
+                          <div className='prog-enroll-design-one'></div>
+                          <div className='prog-enroll-design-two'></div>
+                        </div>
                     
-                      <div className='hover-enroll-btn-insider'>
-                        Enroll Now
-                        <div className='prog-enroll-design-one'></div>
-                        <div className='prog-enroll-design-two'></div>
-                      </div>
-                  
+                    </div>
+                    
+                    
+                    
+                    
                   </div>
-                  
-                  
-                  
-                  
-                </div>
+              
+            </div>
             
           </div>
-                    
-        </div>
-        <div className="program-cards-design card-design-3">
-          <div className='Card-image'>
-            <ImAngry2/>
-          </div>
-          <div className='Card-info'>
-            <div className='card-info-txt'>
-              <p className='main-tit-for-card'>24/7 Emotional Support</p>
-              <p className='sub-tit-for-card'>Users can connect with an available counselor at any time through the ―Talk Now‖</p>
-            </div>
-            <div className='card-view-more'>
-              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-3'}`)}>
-                 <div className='card-view-btn-design'></div>
-                  <p>View More</p>
-              </div>
-            </div>
-          </div>
-           <div className='card-view-more-container'>
-                          <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
+        )}
 
-                <div className='hovering-content-container'>
-                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
-                  <p className='hover-title'>dfdf</p>
-                
-                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
-                  <div className='prog-info-hovering'>
-                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
-                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
-                  </div>
-                </div>
-                <div className='hovering-btn-container'>
-                  <div className='hover-enroll-btn'>
-                    
-                      <div className='hover-enroll-btn-insider'>
-                        Enroll Now
-                        <div className='prog-enroll-design-one'></div>
-                        <div className='prog-enroll-design-two'></div>
-                      </div>
-                  
-                  </div>
-                  
-                  
-                  
-                  
-                </div>
-            
-          </div>
-          
-        </div>
-        <div className="program-cards-design card-design-4">
-          <div className='Card-image'>
-            <ImAngry2/>
-          </div>
-          <div className='Card-info'>
-            <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Mood Tracker</p>
-              <p className='sub-tit-for-card'>It allows them to note feelings and thoughts — which can later be shared with their therapist for better analysis and progress tracking.</p>
-            </div>
-            <div className='card-view-more'>
-              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-4'}`)}>
-                 <div className='card-view-btn-design'></div>
-                  <p>View More</p>
-              </div>
-            </div>
-          </div>
-           <div className='card-view-more-container'>
-                          <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
-
-                <div className='hovering-content-container'>
-                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
-                  <p className='hover-title'>dfdf</p>
-                
-                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
-                  <div className='prog-info-hovering'>
-                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
-                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
-                  </div>
-                </div>
-                <div className='hovering-btn-container'>
-                  <div className='hover-enroll-btn'>
-                    
-                      <div className='hover-enroll-btn-insider'>
-                        Enroll Now
-                        <div className='prog-enroll-design-one'></div>
-                        <div className='prog-enroll-design-two'></div>
-                      </div>
-                  
-                  </div>
-                  
-                  
-                  
-                  
-                </div>
-            
-          </div>
-          
-        </div>
-        <div className="program-cards-design card-design-5">
-          <div className='Card-image'>
-            <ImAngry2/>
-          </div>
-          <div className='Card-info'>
-            <div className='card-info-txt'>
-              <p className='main-tit-for-card'>Meditation Tools</p>
-              <p className='sub-tit-for-card'>SOUL SPACE offers guided meditations, breathing exercises, relaxation music, and mindfulness sessions to help users calm your minds.</p>
-            </div>
-            <div className='card-view-more'>
-              <div className='card-view-btn' onClick={()=>showdetailscard(`${'card-design-5'}`)}>
-                  <p>View More</p>
-                  <div className='card-view-btn-design'></div>
-              </div>
-            </div>
-          </div>
-           <div className='card-view-more-container'>
-                          <IoMdCloseCircleOutline className='close-view-more' onClick={()=>closedetailscard()}/>
-
-                <div className='hovering-content-container'>
-                  <div className='difficulty-level-hover-bar'><p>dfdfdf</p></div>
-                  <p className='hover-title'>dfdf</p>
-                
-                 <p className="hover-sub-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis porro veniam aliquam dolores voluptates consectetur ex praesentium expedita unde dolore.</p>
-                  <div className='prog-info-hovering'>
-                    <p className='hover-program-info-para-one'><PiClock className='icon-hover'/>5 Hours</p>
-                    <p className='hover-program-info-para-two'><PiReadCvLogo className='icon-hover'/>4 Lesson</p>
-                  </div>
-                </div>
-                <div className='hovering-btn-container'>
-                  <div className='hover-enroll-btn'>
-                    
-                      <div className='hover-enroll-btn-insider'>
-                        Enroll Now
-                        <div className='prog-enroll-design-one'></div>
-                        <div className='prog-enroll-design-two'></div>
-                      </div>
-                  
-                  </div>
-                  
-                  
-                  
-                  
-                </div>
-            
-          </div>
-          
-        </div>
         <div className="program-cards-design card-for-booking-detail">
           <div className="round-design-booking-date"></div>
           <div className="booking-card">

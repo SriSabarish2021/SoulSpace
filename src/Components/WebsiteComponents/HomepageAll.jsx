@@ -9,7 +9,7 @@ import Qualification from '../HomePageComponents/Qualification/Qualification';
 import SideBy from '../HomePageComponents/SideBy/SideBy.jsx';
 import Subcription from '../HomePageComponents/Subscription/Subcription.jsx';
 
-const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview}) => {
+const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview,data}) => {
   
 
   return (
@@ -18,12 +18,12 @@ const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview}) => {
       <ScrollVelocity texts={['Digital Space Where Wvery Soul Heals And Grows', 'Connect Minds And Hearts Through Care And Comfort']}  
       velocity={100} 
       className="custom-scroll-text"/>
-      <Programs hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
+      <Programs openwritereview={openwritereview} data={data} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
       <Qualification hreffunc={hreffunc}/>
       <Subcription openwritereview={openwritereview}/>
-      <SideBy hreffunc={hreffunc}/>
+      <SideBy hreffunc={hreffunc}/> 
       <GetinTouch/>
-      <Blog/> 
+      <Blog/>
      
     </>
   )
