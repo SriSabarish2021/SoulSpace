@@ -10,6 +10,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { IoCheckmarkDoneCircle } from "react-icons/io5";
 import { useEffect } from 'react';
+import NavForMobile from './Components/MobileNAV/MobileNav';
 
 function App() {
 
@@ -175,10 +176,18 @@ const clickreviewcloser=(id)=>{
       }
     }, [successmess])
 
+    const[mobilenav,setmobilenav]=useState(false)
 
   return (
     <div className='website-main-container'>
-      <Nav hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
+      <style>{
+        `html{
+          overflow-x: hidden;
+          overflow-y:${mobilenav||reviewwrite?'hidden':'auto'}
+        }`}
+      </style>
+      <NavForMobile hreffunc={hreffunc} hrefhomefunc={hrefhomefunc} setmobilenav={setmobilenav} mobilenav={mobilenav}/>
+      <Nav setmobilenav={setmobilenav} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
       <Routes>
         <Route path='/'>
           <Route index element={<HomepageAll successsubmit={successsubmit} data={data} openwritereview={openwritereview} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>}/>

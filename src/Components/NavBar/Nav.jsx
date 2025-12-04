@@ -9,7 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaLinkedinIn } from "react-icons/fa";
 
-const Nav = ({hreffunc,hrefhomefunc}) => {
+const Nav = ({hreffunc,hrefhomefunc,setmobilenav}) => {
   
   return (
     <div className="nav-bar-for-website">
@@ -50,7 +50,7 @@ const Nav = ({hreffunc,hrefhomefunc}) => {
               <p onClick={()=>hreffunc("Contact")} className='nav-link-para'>Contact</p>
         </div>
         <div className='mobile-burger-menu'>
-          <RxHamburgerMenu/>
+          <RxHamburgerMenu onClick={()=>setmobilenav(true)}/>
         </div>
       </div>
     </div>
