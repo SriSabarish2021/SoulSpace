@@ -77,9 +77,16 @@ const GetinTouch = ({successsubmit}) => {
                     </div>
                 </div>
                 <div className='input-with-txt-container'>
-                    <p className='input-form-txt'>Doctor</p>
+                    <p className='input-form-txt'>Specific Need</p>
                     <div className='input-container-form'>
-                        <input name='name_doc' type="text" className='input-box-form' placeholder='Your Email'/>
+                        <select name='phone'  type="text" placeholder='Your Mobile.No' className='input-box-form'>
+                          <option value="Not Choosed">--Choose--</option>
+                          <option value="One-One">One-One</option>
+                          <option value="Councelling">Councelling</option>
+                          <option value="Emotional Support">Emotional Support</option>
+                          <option value="Medication">Medication</option>
+                          <option value="Motive Support">Motive Support</option>
+                        </select>
                     </div>
                 </div>
             </div>
