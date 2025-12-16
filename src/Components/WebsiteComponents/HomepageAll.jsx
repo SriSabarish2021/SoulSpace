@@ -15,7 +15,7 @@ const HomepageAll = ({hreffunc,hrefhomefunc,openwritereview,data,successsubmit})
   return (
     <>
       <HomeMain hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
-      <ScrollVelocity texts={['Digital Space Where Wvery Soul Heals And Grows', 'Connect Minds And Hearts Through Care And Comfort']}  
+      <ScrollVelocity texts={['Digital Space Where Every Soul Heals And Grows', 'Connect Minds And Hearts Through Care And Comfort']}  
       velocity={100} 
       className="custom-scroll-text"/>
       <Programs openwritereview={openwritereview} data={data} hreffunc={hreffunc} hrefhomefunc={hrefhomefunc}/>
